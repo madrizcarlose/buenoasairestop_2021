@@ -19,7 +19,7 @@
 <div class="container" >
     <div class="text-center">
         <div  style="width: 100%;">
-            <p class="h1"  align="center">Guía de Buenos Aires</p>  
+            <p class="h1"  align="center">Guía de Buenos Aires 2</p>  
         </div>
     </div>
     <br><br><br>
