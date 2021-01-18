@@ -14,7 +14,7 @@
 </head>
 
 <body bgcolor="#afafaf">
-<?php include 'include/membrete_00>.inc';?>
+<?php include 'include/membrete_00.inc';?>
 
 <div class="container" >
     <div class="text-center">
