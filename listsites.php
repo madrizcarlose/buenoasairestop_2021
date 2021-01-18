@@ -29,7 +29,7 @@ $result = $conn->query($str_sql4);
 <html lang="en">
 <head>
    <?php include 'include/head.inc';?>
-   <link rel="stylesheet" href="../css/mis_estilos.css">
+   
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
    
    
@@ -39,6 +39,9 @@ $result = $conn->query($str_sql4);
 </head>
 
 <body>
+	<!--pie de pagina-->
+<?php include 'include/membrete_00>.inc';?>
+
 
 <?php// print $str_sql2; ?>
 
@@ -46,21 +49,7 @@ $result = $conn->query($str_sql4);
 
 <div class="container-fluid" >
 
-<!--membrete general-->
-<div class="container-fluid" style="background-color:#FBFCFC;" >
-	<div class="row">
-		<div class="col-sm-6 col-md-8 col-lg-8"> 
-		  	<img src="../imagenes/apps/logo01.png"  alt="" longdesc="" id="img_logo" height="42" width="82">
-			
-		</div>
-		<div class="col-sm-6 col-md-4 col-lg-4" align="right">
-			
-			<font size="1" face="arial" color=white><b>email:</b>buai@gmail.com</font>
-			</div>
-	</div>
-</div>
-<?php
-//include 'include/membrete_01.inc';?>
+
 
 	<div class="container-fluid" style="background-color:#fafafa;">
 		<br><br>
