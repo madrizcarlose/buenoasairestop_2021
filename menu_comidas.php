@@ -15,6 +15,7 @@
 </head>
 
 <body bgcolor="#afafaf">
+<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 <?php include 'include/membrete_00.inc';?>
 
 <div class="container-fluid" style="background-color:#FFFFFF;" >
@@ -40,14 +41,14 @@
         </div> 
 		
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-           <a href="listsites.php?categoria=c006"><p class="h1">Pescados y Mariscos</p>
+           <a href="listsites.php?categoria=c006"><p class="h1">Pescados, Mariscos</p>
 			<img src="images/app/menu/com_pescado.jpeg" width="120" height="75" alt="Pescados y Mariscos" longdesc="Pescados y Mariscos" id="img_pesc" /></a>
 			<p class="text_menu">Pescados, mariscos, paellas..</p>
 		   <hr>  
 		</div>
 	
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-           <a href="listsites.php?categoria=c008"><p class="h2">Italiana</p>
+           <a href="listsites.php?categoria=c008"><p class="h1">Italiana</p>
 			<img src="images/app/menu/com_italiana.jpeg" width="120" height="75" alt="Italiana" longdesc="Italiana" id="img_ital" /></a>
 			<p class="text_menu">Pastas y pizzas,..</p>
 		   <hr>  
