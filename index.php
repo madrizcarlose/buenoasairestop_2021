@@ -16,12 +16,12 @@
 
 <body bgcolor="#afafaf">
 <br>
-<div class="container-fluid" style="background-color:#FFFFFF;" >
+<div class="container" style="background-color:#FFFFFF;" >
 	<div class="row">
-		<div class="col-sm-4 col-md-4 col-lg-4"> 
+		<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
 		  	<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 		</div>
-		<div class="col-sm-8 col-md-8 col-lg-8" valign="center"> 
+		<div class="col-sm-8 col-md-8 col-lg-8" valign="center" align="center"> 
 		<p class="h2"  align="left">Guía de Buenos Aires</p> 
 		</div>
 	</div>
@@ -56,7 +56,7 @@
 		</div>
 	
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-           <a href="menu_diversion.php"><p class="h1">Servicios,productos</p>
+           <a href="menu_diversion.php"><p class="h1">Serv. y productos</p>
 			<img src="images/app/menu/opt_servprof.jpeg" width="120" height="75" alt="Servicios y productos" longdesc="Servicios y productos" id="img_serv" /></a>
 			<p class="text_menu">Seguros, salud, estética, ...</p>
 		   <hr>  

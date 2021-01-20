@@ -42,7 +42,6 @@ $result = $conn->query($str_sql4);
 <body>
 	<!--pie de pagina-->
 <?php include 'include/membrete_00.inc';?>
-dffghfhfg
 
 <?php// print $str_sql2; ?>
 
