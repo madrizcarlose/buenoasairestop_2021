@@ -18,7 +18,8 @@
 
 <body bgcolor="#afafaf">
 
-<div class="container" style="background-color:#FFFFFF;" >
+<div class="container">
+<div class="template">
 	<div class="row">
 		<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
 		<a href="index.php"><img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
@@ -28,10 +29,12 @@
 		<p class="h2"  align="left">Restaurantes en Buenos Aires</p> 
 		</div>
 	</div>
+	</div>
 </div>
 <br><br>
 
 <div class="container" >
+<div class="template">
     <div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 			<a href="listsites.php?categoria=c003"><p class="h1">Asados</p>
@@ -75,6 +78,7 @@
 		   <hr>  
 		</div>	
 	</div> <!--div row-->
+</div>
 </div> <!-- class="container" -->
 
 </br></br>

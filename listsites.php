@@ -48,6 +48,7 @@ $result = $conn->query($str_sql4);
 <?php //print $str_sql3; ?>
 
 <div class="container-fluid" >
+<div class="template">
 
 
 
@@ -189,7 +190,7 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 <!--pie de pagina-->
 <?php 
 //include 'include/footer.inc';?> 
-
+</div>
 </div>
 </body>
 </html>
