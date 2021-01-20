@@ -56,7 +56,7 @@
 		</div>
 	
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-           <a href="menu_diversion.php"><p class="h1">Servicios y productos</p>
+           <a href="menu_diversion.php"><p class="h1">Servicios,productos</p>
 			<img src="images/app/menu/opt_servprof.jpeg" width="120" height="75" alt="Servicios y productos" longdesc="Servicios y productos" id="img_serv" /></a>
 			<p class="text_menu">Seguros, salud, estética, ...</p>
 		   <hr>  
