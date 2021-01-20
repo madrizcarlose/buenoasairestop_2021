@@ -32,7 +32,8 @@ $result = $conn->query($str_sql4);
    
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
    
-   
+   <title>Bdddddddddddddddddddddddddd</title>
+
    
    
    
@@ -41,7 +42,7 @@ $result = $conn->query($str_sql4);
 <body>
 	<!--pie de pagina-->
 <?php include 'include/membrete_00.inc';?>
-
+dffghfhfg
 
 <?php// print $str_sql2; ?>
 
