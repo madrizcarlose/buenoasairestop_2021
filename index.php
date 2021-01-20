@@ -14,29 +14,24 @@
 </head>
 
 <body bgcolor="#afafaf">
-
+<br>
 <div class="container-fluid" style="background-color:#FFFFFF;" >
 	<div class="row">
-		<div class="col-sm-6 col-md-8 col-lg-8"> 
+		<div class="col-sm-4 col-md-4 col-lg-4"> 
 		  	<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
+		</div>
+		<div class="col-sm-8 col-md-8 col-lg-8" valign="center"> 
+		<p class="h2"  align="left">Guía de Buenos Aires</p> 
 		</div>
 	</div>
 </div>
 
-<div class="container" >
-    <div class="text-center">
-        <div  style="width: 100%;">
-            <p class="h1"  align="center">Guía de Buenos Aires 2</p>  
-        </div>
-    </div>
-</div>
-
 <br><br><br>
- ff   
+   
 <div class="container" >
     <div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-           <a href="menu_comidas.php"><p class="h2">Restaurantes</p>
+           <a href="menu_comidas.php"><p class="h1">Restaurantes</p>
 			<img src="images/app/menu/opt_comidas.jpeg" width="120" height="75" alt="Restaurantes" longdesc="Restaurantes" id="img_rest" /></a>
 		   <p class="text_menu">Carnes, pescado, pastas, pizzas, asiática..</p>
 		   <hr>
@@ -44,7 +39,7 @@
         </div>
 		
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-           <a href="listsites.php?categoria=c020"><h5>Bares</h5>
+           <a href="listsites.php?categoria=c020"><p class="h1">Bares</p>
 			<img src="images/app/menu/opt_bares.jpg" width="120" height="75" alt="Bares" longdesc="Bares" id="img_bar" /></a>
 			<p class="text_menu">Cervezas y mas bebidas</p>
 		   <hr>  
@@ -60,7 +55,7 @@
 		</div>
 	
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-           <a href="menu_diversion.php"><p class="h2">Servicios y productos</p>
+           <a href="menu_diversion.php"><p class="h1">Servicios y productos</p>
 			<img src="images/app/menu/opt_servprof.jpeg" width="120" height="75" alt="Servicios y productos" longdesc="Servicios y productos" id="img_serv" /></a>
 			<p class="text_menu">Seguros, salud, estética, ...</p>
 		   <hr>  

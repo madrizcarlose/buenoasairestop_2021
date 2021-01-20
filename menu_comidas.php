@@ -15,17 +15,20 @@
 </head>
 
 <body bgcolor="#afafaf">
-<?php include 'include/membrete_00>.inc';?>
+<?php include 'include/membrete_00.inc';?>
 
-<div class="container" >
-    <div class="text-center">
-		<div class="mx-auto" style="width: 100%;">
-    		<h1 align="center">Restaurantes en Buenos Aires</h1>  
+<div class="container-fluid" style="background-color:#FFFFFF;" >
+	<div class="row">
+		<div class="col-sm-4 col-md-4 col-lg-4"> 
+		  	<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
+		</div>
+		<div class="col-sm-8 col-md-8 col-lg-8"> 
+		<p class="h2"  align="left">Restaurantes en Buenos Aires</p> 
 		</div>
 	</div>
 </div>
 <br><br>
-tt
+
 <div class="container" >
     <div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">

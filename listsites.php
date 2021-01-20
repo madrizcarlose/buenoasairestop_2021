@@ -40,7 +40,7 @@ $result = $conn->query($str_sql4);
 
 <body>
 	<!--pie de pagina-->
-<?php include 'include/membrete_00>.inc';?>
+<?php include 'include/membrete_00.inc';?>
 
 
 <?php// print $str_sql2; ?>
@@ -107,8 +107,7 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 
 
 						?>
-						<a href="listsites.php?categoria=c020"><h5>Bares</h5>
-						<a href="listsites.php?categoria=c003"><p class="h2">Asados</p>
+						
 						 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
            
 			
@@ -138,7 +137,7 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 									</td>
 									<td rowspan=2 width=10>&nbsp;&nbsp;&nbsp;</td>
 									<td class="align-top" >
-									<h5><font color="#086A87"><span id="titulo"> <?php print $row['nomb_negocio']; ?></span></h5></font>
+									<h4><font color="#086A87"><span id="titulo"> <?php print $row['nomb_negocio']; ?></span></h4></font>
 									<font face="helvetica" color="black">
 									<?php $rank = $row['valoracion']; ?>									
 									<div id="ocu_mayor_igual_800">
