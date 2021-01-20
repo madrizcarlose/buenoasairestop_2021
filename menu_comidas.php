@@ -20,7 +20,8 @@
 <div class="container-fluid" style="background-color:#FFFFFF;" >
 	<div class="row">
 		<div class="col-sm-4 col-md-4 col-lg-4"> 
-		  	<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
+		<a href="index.php"><img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
+		</a>
 		</div>
 		<div class="col-sm-8 col-md-8 col-lg-8"> 
 		<p class="h2"  align="left">Restaurantes en Buenos Aires</p> 
@@ -34,12 +35,12 @@
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 			<a href="listsites.php?categoria=c003"><p class="h1">Asados</p>
 			<img src="images/app/menu/com_carne.jpeg" width="120" height="75" alt="Asados" longdesc="Asados" id="img_asad" /></a>
-			<p class="text_menu">Asados, parillas, carnes..</p>
+			<h5><p class="text_menu">Asados, parillas, carnes..</p></h5>
 		   <hr>
         </div> 
 		
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-           <a href="listsites.php?categoria=c006"><p class="h2">Pescados y Mariscos</p>
+           <a href="listsites.php?categoria=c006"><p class="h1">Pescados y Mariscos</p>
 			<img src="images/app/menu/com_pescado.jpeg" width="120" height="75" alt="Pescados y Mariscos" longdesc="Pescados y Mariscos" id="img_pesc" /></a>
 			<p class="text_menu">Pescados, mariscos, paellas..</p>
 		   <hr>  
@@ -53,21 +54,21 @@
 		</div>
 		
    		 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-           <a href="listsites.php?categoria=c009"><p class="h2">Oriental</p>
+           <a href="listsites.php?categoria=c009"><p class="h1">Oriental</p>
 			<img src="images/app/menu/com_oriental.jpeg" width="120" height="75" alt="Oriental" longdesc="Oriental" id="img_orie" /></a>
 			<p class="text_menu">Arabe, Siria, China, Japonesa,..</p>
 		   <hr>  
 		</div>
 	
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-           <a href="listsites.php?categoria=c010"><p class="h2">Sur Americana</p>
+           <a href="listsites.php?categoria=c010"><p class="h1">Sur Americana</p>
 			<img src="images/app/menu/com_suramerica.jpg" width="120" height="75" alt="Sur Americana" longdesc="Sur Americana" id="img_sura" /></a>
 			<p class="text_menu">Colombiana, Venezolana, Peruana,..</p>
 		   <hr>  
 		</div>
 		
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-           <a href="listsites.php?categoria=c011"><p class="h2">Hamburguesas</p>
+           <a href="listsites.php?categoria=c011"><p class="h1">Hamburguesas</p>
 			<img src="images/app/menu/com_burger.jpg" width="120" height="75" alt="Hamburguesas" longdesc="Hamburguesas" id="img_hamb" /></a>
 			<p class="text_menu">Mejores hamburguesas de la ciudad...</p>
 		   <hr>  
