@@ -26,11 +26,11 @@
 <div class="container" >
     <div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-           <a href="listsites.php?categoria=c003"><p class="h2">Asados</p>
+			<a href="listsites.php?categoria=c003"><p class="h2">Asados</p>
 			<img src="images/app/menu/com_carne.jpeg" width="120" height="75" alt="Asados" longdesc="Asados" id="img_asad" /></a>
 			<p class="text_menu">Asados, parillas, carnes..</p>
 		   <hr>
-        </div>
+        </div> 
 		
 	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
            <a href="listsites.php?categoria=c006"><p class="h2">Pescados y Mariscos</p>

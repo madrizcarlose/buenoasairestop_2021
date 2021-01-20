@@ -107,7 +107,8 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 
 
 						?>
-						
+						<a href="listsites.php?categoria=c020"><h5>Bares</h5>
+						<a href="listsites.php?categoria=c003"><p class="h2">Asados</p>
 						 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
            
 			

@@ -44,7 +44,7 @@
         </div>
 		
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-           <a href="listsites.php?categoria=c020"><p class="h2">Bares</p>
+           <a href="listsites.php?categoria=c020"><h5>Bares</h5>
 			<img src="images/app/menu/opt_bares.jpg" width="120" height="75" alt="Bares" longdesc="Bares" id="img_bar" /></a>
 			<p class="text_menu">Cervezas y mas bebidas</p>
 		   <hr>  
