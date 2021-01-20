@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php include 'include/head.inc';?>
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -30,7 +31,7 @@
    
 <div class="container" >
     <div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
            <a href="menu_comidas.php"><p class="h1">Restaurantes</p>
 			<img src="images/app/menu/opt_comidas.jpeg" width="120" height="75" alt="Restaurantes" longdesc="Restaurantes" id="img_rest" /></a>
 		   <p class="text_menu">Carnes, pescado, pastas, pizzas, asiática..</p>
@@ -38,7 +39,7 @@
 		    <br>
         </div>
 		
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
            <a href="listsites.php?categoria=c020"><p class="h1">Bares</p>
 			<img src="images/app/menu/opt_bares.jpg" width="120" height="75" alt="Bares" longdesc="Bares" id="img_bar" /></a>
 			<p class="text_menu">Cervezas y mas bebidas</p>
@@ -46,7 +47,7 @@
 		    <br>
 		</div>
 		
-    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
            <a href="listsites.php?categoria=r000"><p class="h1">Actividades</p>
 			<img src="images/app/menu/opt_funny.jpg" width="120" height="75" alt="Actividades" longdesc="Actividades" id="img_acti" /></a>
 			<p class="text_menu">Parques, karting, tenis, golf,...</p>
@@ -54,7 +55,7 @@
 		   <br>
 		</div>
 	
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
            <a href="menu_diversion.php"><p class="h1">Servicios y productos</p>
 			<img src="images/app/menu/opt_servprof.jpeg" width="120" height="75" alt="Servicios y productos" longdesc="Servicios y productos" id="img_serv" /></a>
 			<p class="text_menu">Seguros, salud, estética, ...</p>
