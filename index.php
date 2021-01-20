@@ -20,8 +20,6 @@
 		<div class="col-sm-6 col-md-8 col-lg-8"> 
 		  	<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 		</div>
-		<div class="col-sm-6 col-md-4 col-lg-4" align="right">
-		</div>
 	</div>
 </div>
 
@@ -31,10 +29,12 @@
             <p class="h1"  align="center">Guía de Buenos Aires 2</p>  
         </div>
     </div>
-    <br><br><br>
+</div>
+
+<br><br><br>
     
-	<div class="container" >
-    	<div class="row">
+<div class="container" >
+    <div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
            <a href="menu_comidas.php"><p class="h2">Restaurantes</p>
 			<img src="images/app/menu/opt_comidas.jpeg" width="120" height="75" alt="Restaurantes" longdesc="Restaurantes" id="img_rest" /></a>
@@ -52,7 +52,7 @@
 		</div>
 		
     	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-           <a href="listsites.php?categoria=r000"><p class="h2">Actividades</p>
+           <a href="listsites.php?categoria=r000"><p class="h1">Actividades</p>
 			<img src="images/app/menu/opt_funny.jpg" width="120" height="75" alt="Actividades" longdesc="Actividades" id="img_acti" /></a>
 			<p class="text_menu">Parques, karting, tenis, golf,...</p>
 		   <hr>  
@@ -65,9 +65,9 @@
 			<p class="text_menu">Seguros, salud, estética, ...</p>
 		   <hr>  
 		</div>	
-		</div> <!--div row-->
-	</div> <!-- class="container" -->
-</div>  <!-- class="container" -->
+	</div> <!--div row-->
+</div> <!-- class="container" -->
+  <!-- class="container" -->
 <br><br>
  
 <!--pie de pagina-->
