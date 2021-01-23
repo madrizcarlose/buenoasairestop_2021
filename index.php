@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<br><br>
+<br>
 <!-- encabezado-->
 <div class="container" >
 	<div class="template">

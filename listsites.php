@@ -27,6 +27,12 @@ $result = $conn->query($str_sql4);
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+    .container.custom-container {
+      padding: 0 10px;
+    }
+</style>
    <?php include 'include/head.inc';?>
    <!--
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -37,7 +43,7 @@ $result = $conn->query($str_sql4);
 <body>
 <br>
 <!-- encabezado-->
-<div class="container" >
+<div class="custom-container container">
 	<div class="template">
 		<div class="row">
 			<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
@@ -54,7 +60,7 @@ $result = $conn->query($str_sql4);
 
 
 <br>
-<div class="container" >
+<div class="custom-container container" >
 <div class="template">
 	<div class="container-fluid" style="background-color:#fafafa;">
 		<br><br>
@@ -162,7 +168,7 @@ $conn->close();
 </div>
 </div>
 
-<br><br>
+<br><br><br><br>
 <!--pie de pagina-->
 <?php 
 include 'include/footer.inc';
