@@ -33,7 +33,7 @@ require "get_sites.php";
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
     .container.custom-container {
-      padding: 0 10px;
+      padding: 0 20px;
     }
 </style>
    <?php include 'include/head.inc';?>
@@ -85,7 +85,7 @@ function selectText(containerid) {
 <div class="template">
 	<div class="container-fluid" style="background-color:#fafafa;">
 		<br><br>
-		<div class="row gutter-20" >
+		<div class="row gutter-30" >
 			<!--
 			<div class="container-fluid" border=1 >
 -->
@@ -140,7 +140,7 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 			
 				?>
 <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
-<div class="shadow p-0 mb-3 bg-white rounded">
+<div class="shadow p-0 mb-5 bg-white rounded">
     <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" height='200'>
     <div class="card-body">
       <h5 class="card-title">
