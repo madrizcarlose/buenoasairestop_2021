@@ -32,7 +32,7 @@
 <br><br>
 
 <!-- opciones de menu -->
-<br>
+
 <div class="container" >
 <div class="template">
     <div class="row">
