@@ -85,7 +85,7 @@ function selectText(containerid) {
 <div class="template">
 	<div class="container-fluid" style="background-color:#fafafa;">
 		<br><br>
-		<div class="row gutter-10" >
+		<div class="row gutter-20" >
 			<!--
 			<div class="container-fluid" border=1 >
 -->
@@ -134,9 +134,14 @@ $image_name2 = $carpeta2  . $random . $extension2;
 $image_name2= "img src='" . $image_name2 . "'  width=52,height=28 id='imagen' class='imagen'/> ";
 $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' class='imagen'/> ";
 ?>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3"  >	
+
+<?php
+				$foto = "images/sites/" . $row['imagen_negocio'] ;
+			
+				?>
+<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
 <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
+    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>

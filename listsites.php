@@ -141,12 +141,12 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 	<div class="shadow p-3 mb-5 bg-white rounded">
  <div class="panel panel-default"  >
 -->
-	<div class="panel-body ">
+	<!--<div class="panel-body ">-->
        	<table border=0 width="100%">
 			<tr>
 			<td  valign="top" width="40" align="center">
 				<?php
-				$foto = "img src='images/sites/" . $row['imagen_negocio'] . "' width='60' height='60' class='img-rounded' onclick='javascript:alert(" . $row['codi_negocio'] . ");'  class='img-responsive'/> ";
+				$foto = "img src='images/sites/" . $row['imagen_negocio'] . "' width='140' height='160' class='img-rounded' onclick='javascript:alert(" . $row['codi_negocio'] . ");'  class='img-responsive'/> ";
 				print "<" . $foto;
 				?>
 				</p>
@@ -162,6 +162,9 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 			<td rowspan=2 width=10>&nbsp;&nbsp;&nbsp;</td>
 			<td class="align-top" >
 				<div id="site<?php echo $row['codi_negocio']; ?>" onclick="selectText('site<?php echo $row['codi_negocio'];?>')">
+					<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
+				</div>
+				<div id="site2<?php echo $row['codi_negocio']; ?>">
 					<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
 				</div>
 				<font face="helvetica" color="black">
@@ -180,7 +183,7 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 			</td>
 			</tr>
 		</table>
-    </div> <!--panel body-->
+   <!-- </div> panel body-->
 </div>
 </div>
 <?php
