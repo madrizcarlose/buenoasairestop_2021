@@ -134,48 +134,19 @@ $image_name2 = $carpeta2  . $random . $extension2;
 $image_name2= "img src='" . $image_name2 . "'  width=52,height=28 id='imagen' class='imagen'/> ";
 $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' class='imagen'/> ";
 ?>
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"  >	
-<div class="card" style="width: 18rem;">
-<?php
-				$foto = "img src='images/sites/" . $row['imagen_negocio'] . "'  class='img-rounded' onclick='javascript:alert(" . $row['codi_negocio'] . ");'  class='img-responsive'/> ";
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3"  >	
+<div class="card" style="width: 18rem;" halign="center">
+            <?php
+				$foto = "img src='images/sites/" . $row['imagen_negocio'] . "' width=178,height=118  class='img-rounded' onclick='javascript:alert(" . $row['codi_negocio'] . ");'  class='img-responsive'/> ";
 				print "<" . $foto;
 				?>
-  <img class="card-img-top" src="<?php print "<" . $foto;
-				?>" alt="Card image cap">
+  
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>	
-</div>	
-
-
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"  >
-<div class="shadow p-0 mb-3 bg-white rounded">
-<!--	
-	<div class="shadow p-3 mb-5 bg-white rounded">
- <div class="panel panel-default"  >
--->
-	<div class="panel-body ">
+    <div class="panel-body ">
        	<table border=0 width="100%">
 			<tr>
-			<td  valign="top" width="40" align="center">
-				<?php
-				$foto = "img src='images/sites/" . $row['imagen_negocio'] . "' width='60' height='60' class='img-rounded' onclick='javascript:alert(" . $row['codi_negocio'] . ");'  class='img-responsive'/> ";
-				print "<" . $foto;
-				?>
-				</p>
-				<font face="helvetica"><small><?php print $row['distance']; ?>&nbsp;km</font>
-				<p><font face="helvetica"><small>
-				<?php
-				$coord = $row['coord2'];
-				$tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" >Ver mapa</a>";
-				echo $tira;
-				?>
-				</small></font>
-			</td>
-			<td rowspan=2 width=10>&nbsp;&nbsp;&nbsp;</td>
+			
+		
 			<td class="align-top" >
 				<div id="site<?php echo $row['codi_negocio']; ?>" onclick="selectText('site<?php echo $row['codi_negocio'];?>')">
 					<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
@@ -189,7 +160,15 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 					<?php print $row['telef_negocio'];?>
 				</span>
 				<br>
-				</font>
+                </font>
+                <font face="helvetica"><small><?php print $row['distance']; ?>&nbsp;km</font>
+				<p><font face="helvetica"><small>
+				<?php
+				$coord = $row['coord2'];
+				$tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" >Ver mapa</a>";
+				echo $tira;
+				?>
+				</small></font>
 				<div>
 					<font face="helvetica"><small><b>Dir:&nbsp;</u></b>	<?php print $row['direccion_negocio']; ?></font></small>
 				</div>
@@ -197,8 +176,12 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 			</tr>
 		</table>
     </div> <!--panel body-->
-</div>
-</div>
+  </div> <!--card body-->
+</div>	
+</div>	
+
+
+
 <?php
 //fin de bucle
 }
