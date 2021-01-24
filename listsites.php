@@ -134,22 +134,6 @@ $image_name2 = $carpeta2  . $random . $extension2;
 $image_name2= "img src='" . $image_name2 . "'  width=52,height=28 id='imagen' class='imagen'/> ";
 $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' class='imagen'/> ";
 ?>
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"  >	
-<div class="card" style="width: 18rem;">
-<?php
-				$foto = "img src='images/sites/" . $row['imagen_negocio'] . "'  class='img-rounded' onclick='javascript:alert(" . $row['codi_negocio'] . ");'  class='img-responsive'/> ";
-				print "<" . $foto;
-				?>
-  <img class="card-img-top" src="<?php print "<" . $foto;
-				?>" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>	
-</div>	
-
 
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"  >
 <div class="shadow p-0 mb-3 bg-white rounded">

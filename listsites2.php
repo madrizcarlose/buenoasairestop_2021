@@ -135,49 +135,14 @@ $image_name2= "img src='" . $image_name2 . "'  width=52,height=28 id='imagen' cl
 $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' class='imagen'/> ";
 ?>
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3"  >	
-<div class="card" style="width: 18rem;" halign="center">
-            <?php
-				$foto = "img src='images/sites/" . $row['imagen_negocio'] . "' width=178,height=118  class='img-rounded' onclick='javascript:alert(" . $row['codi_negocio'] . ");'  class='img-responsive'/> ";
-				print "<" . $foto;
-				?>
-  
-  <div class="card-body">
-    <div class="panel-body ">
-       	<table border=0 width="100%">
-			<tr>
-			
-		
-			<td class="align-top" >
-				<div id="site<?php echo $row['codi_negocio']; ?>" onclick="selectText('site<?php echo $row['codi_negocio'];?>')">
-					<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
-				</div>
-				<font face="helvetica" color="black">
-				<?php $rank = $row['valoracion']; ?>									
-				<?php print Substr($row['desc_negocio'], 0,50) . "..."; ?>
-				</font><p><a href="<?php print $row['webpage']; ?>" target="blank" >Web page</a><p>
-				<span class="glyphicon glyphicon-earphone"></span>
-				<span id="tlf<?php echo $row['codi_negocio']; ?>" style="color:black; text-algin:center;display-block:inline;" onclick="selectText('tlf<?php echo $row['codi_negocio'];?>')">
-					<?php print $row['telef_negocio'];?>
-				</span>
-				<br>
-                </font>
-                <font face="helvetica"><small><?php print $row['distance']; ?>&nbsp;km</font>
-				<p><font face="helvetica"><small>
-				<?php
-				$coord = $row['coord2'];
-				$tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" >Ver mapa</a>";
-				echo $tira;
-				?>
-				</small></font>
-				<div>
-					<font face="helvetica"><small><b>Dir:&nbsp;</u></b>	<?php print $row['direccion_negocio']; ?></font></small>
-				</div>
-			</td>
-			</tr>
-		</table>
-    </div> <!--panel body-->
-  </div> <!--card body-->
-</div>	
+<div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
 </div>	
 
 
