@@ -33,7 +33,7 @@ require "get_sites.php";
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
     .container.custom-container {
-      padding: 0 10px;
+      padding: 0 20px;
     }
 </style>
    <?php include 'include/head.inc';?>
@@ -85,7 +85,7 @@ function selectText(containerid) {
 <div class="template">
 	<div class="container-fluid" style="background-color:#fafafa;">
 		<br><br>
-		<div class="row gutter-10" >
+		<div class="row gutter-30" >
 			<!--
 			<div class="container-fluid" border=1 >
 -->
@@ -118,7 +118,7 @@ function showPosition(position) {
   document.getElementById('xlat').value = position.coords.latitude;
 }
 </script>
-		
+
 
 <?php
 //while($row = $result->fetch_assoc()) {
@@ -135,64 +135,60 @@ $image_name2= "img src='" . $image_name2 . "'  width=52,height=28 id='imagen' cl
 $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' class='imagen'/> ";
 ?>
 
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4"  >
-<div class="shadow p-0 mb-3 bg-white rounded">
-<!--	
-	<div class="shadow p-3 mb-5 bg-white rounded">
- <div class="panel panel-default"  >
--->
-	<!--<div class="panel-body ">-->
-       	<table border=0 width="100%">
-			<tr>
-			<td  valign="top" width="40" align="center">
-				<?php
-				$foto = "img src='images/sites/" . $row['imagen_negocio'] . "' width='140' height='160' class='img-rounded' onclick='javascript:alert(" . $row['codi_negocio'] . ");'  class='img-responsive'/> ";
-				print "<" . $foto;
+<?php
+				$foto = "images/sites/" . $row['imagen_negocio'] ;
+			
 				?>
-				</p>
-				<font face="helvetica"><small><?php print $row['distance']; ?>&nbsp;km</font>
-				<p><font face="helvetica"><small>
-				<?php
-				$coord = $row['coord2'];
-				$tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" >Ver mapa</a>";
-				echo $tira;
-				?>
-				</small></font>
-			</td>
-			<td rowspan=2 width=10>&nbsp;&nbsp;&nbsp;</td>
-			<td class="align-top" >
-				<div id="site<?php echo $row['codi_negocio']; ?>" onclick="selectText('site<?php echo $row['codi_negocio'];?>')">
-					<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
-				</div>
-				<div id="site2<?php echo $row['codi_negocio']; ?>">
-					<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
-				</div>
-				<font face="helvetica" color="black">
-				<?php $rank = $row['valoracion']; ?>									
-				<?php print Substr($row['desc_negocio'], 0,50) . "..."; ?>
-				</font><p><a href="<?php print $row['webpage']; ?>" target="blank" >Web page</a><p>
-				<span class="glyphicon glyphicon-earphone"></span>
-				<span id="tlf<?php echo $row['codi_negocio']; ?>" style="color:black; text-algin:center;display-block:inline;" onclick="selectText('tlf<?php echo $row['codi_negocio'];?>')">
-					<?php print $row['telef_negocio'];?>
-				</span>
-				<br>
-				</font>
-				<div>
-					<font face="helvetica"><small><b>Dir:&nbsp;</u></b>	<?php print $row['direccion_negocio']; ?></font></small>
-				</div>
-			</td>
-			</tr>
-		</table>
-   <!-- </div> panel body-->
+<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
+<div class="shadow p-0 mb-5 bg-white rounded">
+    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" height='200'>
+    <div class="card-body">
+      <h5 class="card-title">
+            <div id="site2<?php echo $row['codi_negocio']; ?>">
+				<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
+            </div>
+        </h5>
+       <p>
+		<span class="glyphicon glyphicon-earphone"></span>
+		<span id="tlf<?php echo $row['codi_negocio']; ?>" style="color:black; text-algin:center;display-block:inline;" onclick="selectText('tlf<?php echo $row['codi_negocio'];?>')">
+			<?php print $row['telef_negocio'];?>
+        </span>
+       <p>
+        <span class="glyphicon glyphicon-map-marker"></span>
+        <?php print $row['direccion_negocio'];?>
+     </div>
+    <ul class="list-group list-group-flush">
+    
+    <li class="list-group-item">
+   
+        <div style="width: 50%; float:left">
+        <a href="<?php print $row['webpage']; ?>" target="blank" >Web page</a>
 </div>
+
+<div style="width: 50%; float:right;" align="right">
+<?php 
+           $coord = $row['coord2'];
+           $tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
+               echo $tira;
+               ?>
+               <font face="helvetica"><small><?php print $row['distance']; ?>&nbsp;km</font>
+				</small>
 </div>
+    </li>
+   
+  </ul>
+  </div>
+</div>	
+
+
+
 <?php
 //fin de bucle
 }
 //se cierra la conexioón
 //$conn->close();
 ?>
-					
+			
 </div>
 </div>
 </div>
