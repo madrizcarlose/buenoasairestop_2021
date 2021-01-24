@@ -140,19 +140,19 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 <div class="shadow p-0 mb-5 bg-white rounded">
     <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" height='240'>
     <div class="card-body">
-      <h5 class="card-title" >
-            <div id="site2<?php echo $row['codi_negocio']; ?>">
-				<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
-            </div>
+        <h5 class="card-title" >
+        <div id="site2<?php echo $row['codi_negocio']; ?>">
+				    <h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
+        </div>
         </h5>
        <p>
-		<span class="glyphicon glyphicon-earphone"></span>
-		<span id="tlf<?php echo $row['codi_negocio']; ?>" style="color:black; text-algin:center;display-block:inline;" onclick="selectText('tlf<?php echo $row['codi_negocio'];?>')">
-			<?php print $row['telef_negocio'];?>
+		    <span class="glyphicon glyphicon-earphone"></span>
+		    <span style="color:black; text-algin:center;display-block:inline;">
+			      <?php print $row['telef_negocio'];?>
         </span>
-       <p>
+        <p>
         <span class="glyphicon glyphicon-map-marker"></span>
-        <?php print $row['direccion_negocio'];?>
+            <?php print $row['direccion_negocio'];?>
      </div>
     <ul class="list-group list-group-flush">
     
