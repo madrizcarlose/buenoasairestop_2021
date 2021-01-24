@@ -144,9 +144,7 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
         <div id="site2<?php echo $row['codi_negocio']; ?>">
 				    <h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
         </div>
-        <div id="site<?php echo $row['codi_negocio']; ?>" onclick="selectText('site<?php echo $row['codi_negocio'];?>')">
-					<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
-				</div>
+        
         </h5>
        <p>
 		    <span class="glyphicon glyphicon-earphone"></span>
