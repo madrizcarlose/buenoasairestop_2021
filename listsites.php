@@ -60,9 +60,6 @@ function selectText(containerid) {
 
 <body>
 <br>
-
-
-<br>
 <!-- encabezado-->
 <div class="custom-container container">
 	<div class="template">
