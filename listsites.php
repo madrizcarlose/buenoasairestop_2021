@@ -138,9 +138,9 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 				?>
 <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
 <div class="shadow p-0 mb-5 bg-white rounded">
-    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" height='200'>
+    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" height='240'>
     <div class="card-body">
-      <h5 class="card-title">
+      <h5 class="card-title" >
             <div id="site2<?php echo $row['codi_negocio']; ?>">
 				<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
             </div>
@@ -156,7 +156,7 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
      </div>
     <ul class="list-group list-group-flush">
     
-    <li class="list-group-item">
+    <li class="list-group-item"  style="background-color:#fafafa;">
    
         <div style="width: 50%; float:left">
         <a href="<?php print $row['webpage']; ?>" target="blank" >Web page</a>
