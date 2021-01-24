@@ -140,8 +140,8 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 			
 				?>
 <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
-<div class="card">
-    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" height='180'>
+<div class="shadow p-0 mb-3 bg-white rounded">
+    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" height='200'>
     <div class="card-body">
       <h5 class="card-title">
             <div id="site2<?php echo $row['codi_negocio']; ?>">
