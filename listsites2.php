@@ -118,7 +118,7 @@ function showPosition(position) {
   document.getElementById('xlat').value = position.coords.latitude;
 }
 </script>
-		
+
 
 <?php
 //while($row = $result->fetch_assoc()) {
@@ -141,12 +141,42 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 				?>
 <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
 <div class="card">
-    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap">
+    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" height='180'>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
+      <h5 class="card-title">
+            <div id="site2<?php echo $row['codi_negocio']; ?>">
+				<h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
+            </div>
+        </h5>
+       <p>
+		<span class="glyphicon glyphicon-earphone"></span>
+		<span id="tlf<?php echo $row['codi_negocio']; ?>" style="color:black; text-algin:center;display-block:inline;" onclick="selectText('tlf<?php echo $row['codi_negocio'];?>')">
+			<?php print $row['telef_negocio'];?>
+        </span>
+       <p>
+        <span class="glyphicon glyphicon-map-marker"></span>
+        <?php print $row['direccion_negocio'];?>
+     </div>
+    <ul class="list-group list-group-flush">
+    
+    <li class="list-group-item">
+   
+        <div style="width: 50%; float:left">
+        <a href="<?php print $row['webpage']; ?>" target="blank" >Web page</a>
+</div>
+
+<div style="width: 50%; float:right;" align="right">
+<?php 
+           $coord = $row['coord2'];
+           $tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
+               echo $tira;
+               ?>
+               <font face="helvetica"><small><?php print $row['distance']; ?>&nbsp;km</font>
+				</small>
+</div>
+    </li>
+   
+  </ul>
   </div>
 </div>	
 
@@ -158,7 +188,7 @@ $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' cl
 //se cierra la conexioón
 //$conn->close();
 ?>
-					
+			
 </div>
 </div>
 </div>
