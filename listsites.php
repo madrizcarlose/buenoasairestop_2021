@@ -15,7 +15,9 @@ $lon = -58.4354472;
 
 
 //--------------------------------------
-$url = "http://localhost/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
+
+//$url = "http://localhost/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
+$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
 $data = file_get_contents($url);
 
 
