@@ -160,14 +160,24 @@ $longitud = count($products);
     <div class="card-body">
         <h5 class="card-title" >
         <div id="site2<?php echo $row['codi_negocio']; ?>">
-				    <h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
+            <h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
+            
         </div>
         </h5>
        <p>
 		    <span class="glyphicon glyphicon-earphone"></span>
 		    <span style="color:black; text-algin:center;display-block:inline;">
-			      <?php print $row['telef_negocio'];?>
-        </span>
+            <?php print $row['telef_negocio'];?>
+           
+            <?php 
+            if ($row['whatsapp'] != NULL) {
+              ?>
+            <a href="https://api.whatsapp.com/send?phone=<?php print $row['whatsapp'];?>&text=Hola, los ubiqué en *www.BuenosAiresTop.com*." target="blank" >
+            <img src="images/app/utils/whatsapp_ico.png"  height="22" width="22"><br>
+				    </a>
+            <?php  }?>
+           
+          </span>
         <p>
         <span class="glyphicon glyphicon-map-marker"></span>
         <?php print $row['direccion_negocio'];?>
