@@ -81,7 +81,7 @@
 		 <!--   <a href="services.php"><p class="h1">Serv. y productos</p> -->
 		   <a href="#" onclick="openPage('services.php');"><p class="h1">Serv. y productos</p>
 			<img src="images/app/menu/opt_servprof.jpeg" width="120" height="75" alt="Servicios y productos" longdesc="Servicios y productos" id="img_serv" /></a>
-			<p class="text_menu">Seguros, salud, estética, ...</p>
+			<p class="text_menu">xSeguros, salud, estética, ...</p>
 		   <hr>  
 		</div>	
 
