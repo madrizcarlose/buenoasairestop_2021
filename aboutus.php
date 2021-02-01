@@ -30,7 +30,7 @@
 
 <div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9" align="center">
-<h2><font color=#086A87>Acerca de Nosotros...</h3>
+<h2><font color=#086A87>Acerca de Nosotros</h3>
 <br><br>
 <font color=#0B2161 align="justify"><h4>Somos un página web creada en el año 2019 con el objetivo de promover y dar a conocer las diferentes opciones que ofrece la ciudas de Buenos Aires en hospedaje, restaurantes, donde comprar, sitios recreacionales, etc. Adicionalmente servimos como una plataforma de publicación gratis de avisos clasificados asociados a oferta de artículos o servicios.
 <br><br>
