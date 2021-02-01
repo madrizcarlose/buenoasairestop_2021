@@ -172,7 +172,7 @@ $longitud = count($products);
             <?php 
             if ($row['whatsapp'] != NULL) {
               ?>
-            <a href="https://api.whatsapp.com/send?phone=<?php print $row['whatsapp'];?>&text=Hola, los ubiqué en *www.BuenosAiresTop.com*." target="blank" >
+            <a href="https://api.whatsapp.com/send?phone=<?php print $row['whatsapp'];?>&text=Hola, los ubiqué en *https://serviciomadriz.online/buenosairestop*." target="blank" >
             <img src="images/app/utils/whatsapp_ico.png"  height="22" width="22"><br>
 				    </a>
             <?php  }?>

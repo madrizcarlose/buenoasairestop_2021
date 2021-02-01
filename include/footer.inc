@@ -3,7 +3,7 @@
 	<div class="row" style="background-color:#FFFFFF;">
 		<div class="col-sm-12 col-md-12 col-lg-12" align="left"> 
 			<div class="fb-like" data-href="http://www.vamosba.com" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true">
-				<a href="https://api.whatsapp.com/send?phone=+5491127835577&text=Hola, quiero saber como publicarme en *BuenosAiresTop.com*." target="blank">
+				<a href="https://api.whatsapp.com/send?phone=+5491127835577&text=Hola, quiero saber como publicarme en *https://serviciomadriz.online/buenosairestop*." target="blank">
 				<img src="images/app/utils/whatsapp.png"  height="42" width="52"><br>
 				</a>
 			

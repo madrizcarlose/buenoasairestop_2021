@@ -38,12 +38,20 @@
 <div class="container" >
 <div class="template">
     <div class="row">
+		
 		<!-- opcion asados -->
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 			<!-- <a href="listsites.php?categoria=c003"><p class="h1">Asados</p> -->
 			<a href="#" onclick="showList('c003');"><p class="h1">Asados</p>
 			<img src="images/app/menu/com_carne.jpeg" width="120" height="75" alt="Asados" longdesc="Asados" id="img_asad" /></a>
 			<h5><p class="text_menu">Asados, parillas, carnes..</p></h5>
+		   <hr>
+		</div> 
+		<!-- opciondesayunos -->
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<a href="#" onclick="showList('c001');"><p class="h1">Desayunos & Café</p>
+			<img src="images/app/menu/com_desayuno.jpg" width="120" height="75" alt="Desayunos" longdesc="Desayunos" id="img_desa" /></a>
+			<h5><p class="text_menu">Cafe..</p></h5>
 		   <hr>
         </div> 
 		<!-- opcion pescados -->
