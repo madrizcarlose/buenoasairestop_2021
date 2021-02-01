@@ -32,7 +32,8 @@
 <div id="footer">
 	<div class="footer-contents">
 		<div class="legal">
-			<a href="politica_privacidad.php"><font size="1" face="helvetica" color="blue">Política de privacidad</a>  
+			<a href="politica_privacidad.php"><font size="1" face="helvetica" color="blue">Política de privacidad</a> 
+			| <a href="about02.php"><font size="1" face="helvetica" color="blue">Acerca de Nosotros</a>   
           	<br>
 			<font size="1" face="helvetica" color="black"><small>&copy; 2021 Todos los derechos reservados.</p>
 		</div>
