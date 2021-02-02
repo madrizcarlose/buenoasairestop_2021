@@ -204,6 +204,38 @@ include 'include/footer.inc';
     </div>
 <?php
  }
+ else{ 
+	 
+	//require 'db_connection.php';
+
+	if(isset($_SESSION['login_id'])){
+		header('Location: index.php');
+		exit;
+	}
+	
+	require 'google_login/google-api/vendor/autoload.php';
+	
+	// Creating new google client instance
+	$client = new Google_Client();
+	
+	// Enter your Client ID
+	$client->setClientId('432882886420-uvdm69kl8nb2b19b2es2o7a3ttct5on4.apps.googleusercontent.com');
+	// Enter your Client Secrect
+	$client->setClientSecret('0KSoCti3JgsmtmNq6VbSyr5g');
+	// Enter the Redirect URL
+	$client->setRedirectUri('https://serviciomadriz.online/buenosairestop/google_login/login.php');
+	
+	// Adding those scopes which we want to get (email & profile Information)
+	$client->addScope("email");
+	$client->addScope("profile");
+	 
+	 
+	 
+	 ?>
+	<a href="login.php"><font size="1" face="helvetica" color="blue">Login</a>
+	<a class="login-btn" href="<?php echo $client->createAuthUrl(); ?>">Login original</a>
+<?php 
+}
  ?>
 
 </body>
