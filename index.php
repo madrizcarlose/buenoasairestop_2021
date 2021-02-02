@@ -187,8 +187,8 @@ if(isset($_SESSION['login_id']) == TRUE){
 	 
 	 
 	 ?>
-	<div class="_login">
-	<a class="_login" href="<?php echo $client->createAuthUrl(); ?>">
+	<div>
+	<a href="<?php echo $client->createAuthUrl(); ?>">
 	<img src="images/app/utils/signin-google.png"  alt="" longdesc="" id="img_logo"  height="52" width="200">
 </a>
 	
