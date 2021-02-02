@@ -59,10 +59,10 @@ else{
         ._container{
             max-width: 400px;
             background-color: #ffffff;
-            padding: 20px;
+            padding: 2px;
             margin: 0 auto;
-            border: 1px solid #cccccc;
-            border-radius: 2px;
+            border: 0px solid #cccccc;
+            border-radius: 1px;
         }
 
         ._img{
@@ -72,6 +72,7 @@ else{
             margin: 0 auto;
             border-radius: 50%;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+			display: inline-block;
         }
         ._img > img{
             width: 50px;
@@ -79,6 +80,7 @@ else{
         }
         ._info{
             text-align: center;
+			display: inline-block;
         }
         ._info h1{
             margin:10px 0;
@@ -96,6 +98,16 @@ else{
             border-radius: 2px;
             border: 1px solid rgba(0, 0, 0, 0.1);
         }
+
+		#izquierda {
+float:left;
+}
+
+#derecha {
+float:left;
+width:200px;
+background:#fc0;
+}
     </style>
 
 
@@ -162,8 +174,8 @@ if(isset($_SESSION['login_id']) == TRUE){
 	 
 	 
 	 ?>
-	<a href="login.php"><font size="1" face="helvetica" color="blue">Login</a>
-	<a class="login-btn" href="<?php echo $client->createAuthUrl(); ?>">Login original</a>
+	
+	<a class="login-btn" href="<?php echo $client->createAuthUrl(); ?>">Login</a>
 <?php 
 }
  ?>
