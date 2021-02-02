@@ -14,8 +14,8 @@ if(mysqli_num_rows($get_user) > 0){
     $user = mysqli_fetch_assoc($get_user);
 }
 else{
-    header('Location: logout.php');
-    exit;
+   // header('Location: logout.php');
+   // exit;
 }
 ?>
 
@@ -50,7 +50,7 @@ else{
             box-sizing: border-box;
             -webkit-box-sizing: border-box;
         }
-        body{
+        ._bodyxx{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f7f7ff;
             padding: 10px;
@@ -67,15 +67,15 @@ else{
 
         ._img{
             overflow: hidden;
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
             margin: 0 auto;
             border-radius: 50%;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         ._img > img{
-            width: 100px;
-            min-height: 100px;
+            width: 50px;
+            min-height: 50px;
         }
         ._info{
             text-align: center;
@@ -193,7 +193,7 @@ include 'include/footer.inc';
             <img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
         </div>
         <div class="_info">
-            <h1><?php echo $user['name']; ?></h1>
+            <h5><?php echo $user['name']; ?></h5>
             <p><?php echo $user['email']; ?></p>
             <a href="logout.php">Logout</a>
         </div>

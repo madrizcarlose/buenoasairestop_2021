@@ -3,7 +3,7 @@
 require 'db_connection.php';
 
 if(isset($_SESSION['login_id'])){
-    header('Location: home.php');
+    header('Location: index.php');
     exit;
 }
 
@@ -47,7 +47,7 @@ if(isset($_GET['code'])):
         if(mysqli_num_rows($get_user) > 0){
 
             $_SESSION['login_id'] = $id; 
-            header('Location: home.php');
+            header('Location: index.php');
             exit;
 
         }
@@ -58,7 +58,7 @@ if(isset($_GET['code'])):
 
             if($insert){
                 $_SESSION['login_id'] = $id; 
-                header('Location: home.php');
+                header('Location: index.php');
                 exit;
             }
             else{
