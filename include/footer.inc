@@ -26,9 +26,9 @@
 	<div class="footer-contents">
 		<div class="legal">
 			<a href="politica_privacidad.php"><font size="1" face="helvetica" color="blue">Política de privacidad</a> 
-			| <a href="aboutus.php"><font size="1" face="helvetica" color="blue">Acerca de Nosotros</a>   
+			| <a href="aboutus.php"><font size="1" face="helvetica" color="blue">Acerca de nosotros</a>   
           	<br>
-			<font size="1" face="helvetica" color="black"><small>&copy; 2021 Todos los derechos reservados.</p>
+			<font size="1" face="helvetica" color="black"><small>&copy; 2021 Todos los derechos reservados .</p>
 		</div>
      </div>
 </div> 
