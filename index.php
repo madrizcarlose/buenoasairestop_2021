@@ -188,6 +188,10 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 <?php 
 include 'include/footer.inc';
 ?>
+<?php
+ if ($user['name'] != NULL) {
+?>
+
  <div class="_container">
         <div class="_img">
             <img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
@@ -198,6 +202,9 @@ include 'include/footer.inc';
             <a href="logout.php">Logout</a>
         </div>
     </div>
+<?php
+ }
+ ?>
 
 </body>
 </html>
