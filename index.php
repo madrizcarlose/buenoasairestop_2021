@@ -76,8 +76,8 @@ else{
 			vertical-align: top;
         }
         ._img > img{
-            width: 50px;
-            min-height: 50px;
+            width: 30px;
+            min-height: 30px;
         }
         ._info{
             text-align: center;
