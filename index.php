@@ -185,8 +185,9 @@ if(isset($_SESSION['login_id']) == TRUE){
 	 
 	 
 	 ?>
-	
+	<div class="_info">
 	<a class="_login" href="<?php echo $client->createAuthUrl(); ?>">Login</a>
+</div>
 <?php 
 }
  ?>
