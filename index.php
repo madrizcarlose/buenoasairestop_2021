@@ -134,6 +134,8 @@ background:#fc0;
 		<div class="row">
 			<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
+			
+
 			</div>
 			<div class="col-sm-4 col-md-4 col-lg-4" valign="center" align="center"> 
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
@@ -185,8 +187,12 @@ if(isset($_SESSION['login_id']) == TRUE){
 	 
 	 
 	 ?>
-	<div class="_info">
-	<a class="_login" href="<?php echo $client->createAuthUrl(); ?>">Login</a>
+	<div class="_login">
+	<a class="_login" href="<?php echo $client->createAuthUrl(); ?>">
+	<img src="images/app/utils/signin-google.png"  alt="" longdesc="" id="img_logo"  height="52" width="200">
+</a>
+	
+	
 </div>
 <?php 
 }
