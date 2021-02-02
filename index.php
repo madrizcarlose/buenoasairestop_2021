@@ -1,10 +1,10 @@
 <?php
 require 'db_connection.php';
 
-if(!isset($_SESSION['login_id'])){
-    header('Location: login.php');
-    exit;
-}
+// if(!isset($_SESSION['login_id'])){
+ //   header('Location: login.php');
+ //   exit;
+//}
 
 $id = $_SESSION['login_id'];
 
