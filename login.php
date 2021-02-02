@@ -80,6 +80,6 @@ else:
     exit;
 ?>
 
-    <!-- <a class="login-btn" href="<?php echo $client->createAuthUrl(); ?>">Login</a> -->
+   
 
 <?php endif; ?>
