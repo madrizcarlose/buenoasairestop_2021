@@ -75,8 +75,11 @@ if(isset($_GET['code'])):
     
 else: 
     // Google Login Url = $client->createAuthUrl(); 
+
+    header('Location: index.php');
+    exit;
 ?>
 
-    <a class="login-btn" href="<?php echo $client->createAuthUrl(); ?>">Login</a>
+    <!-- <a class="login-btn" href="<?php echo $client->createAuthUrl(); ?>">Login</a> -->
 
 <?php endif; ?>
