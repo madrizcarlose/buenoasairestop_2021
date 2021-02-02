@@ -100,6 +100,16 @@ else{
             border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
+		._login a{
+            display: inline-block;
+            background-color: #006600;
+            color: #fff;
+            text-decoration: none;
+            padding:5px 10px;
+            border-radius: 2px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
 		#izquierda {
 float:left;
 }
@@ -176,7 +186,7 @@ if(isset($_SESSION['login_id']) == TRUE){
 	 
 	 ?>
 	
-	<a class="login-btn" href="<?php echo $client->createAuthUrl(); ?>">Login</a>
+	<a class="_login" href="<?php echo $client->createAuthUrl(); ?>">Login</a>
 <?php 
 }
  ?>
