@@ -112,10 +112,70 @@ else{
 			<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 			</div>
-			<div class="col-sm-8 col-md-8 col-lg-8" valign="center" align="center"> 
+			<div class="col-sm-4 col-md-4 col-lg-4" valign="center" align="center"> 
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
 				<h1 align="left">Guía de Buenos Aires</h1>
 			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4" valign="center" align="center"> 
+			<?php
+if(isset($_SESSION['login_id']) == TRUE){
+//  if ($user['name'] != NULL) {
+?>
+
+ <div class="_container">
+        <div class="_img">
+            <img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
+        </div>
+        <div class="_info">
+            <h5><?php echo $user['name']; ?></h5>
+            <p><?php echo $user['email']; ?></p>
+            <a href="logout.php">Logout</a>
+        </div>
+    </div>
+<?php
+ }
+ else{ 
+	 
+	//require 'db_connection.php';
+
+	if(isset($_SESSION['login_id'])){
+	//	header('Location: index.php');
+	//	exit;
+	}
+	
+	require 'google_login/google-api/vendor/autoload.php';
+	
+	// Creating new google client instance
+	$client = new Google_Client();
+	
+	// Enter your Client ID
+	$client->setClientId('432882886420-uvdm69kl8nb2b19b2es2o7a3ttct5on4.apps.googleusercontent.com');
+	// Enter your Client Secrect
+	$client->setClientSecret('0KSoCti3JgsmtmNq6VbSyr5g');
+	// Enter the Redirect URL
+	$client->setRedirectUri('https://serviciomadriz.online/buenosairestop/login.php');
+	
+	// Adding those scopes which we want to get (email & profile Information)
+	$client->addScope("email");
+	$client->addScope("profile");
+	 
+	 
+	 
+	 ?>
+	<a href="login.php"><font size="1" face="helvetica" color="blue">Login</a>
+	<a class="login-btn" href="<?php echo $client->createAuthUrl(); ?>">Login original</a>
+<?php 
+}
+ ?>
+ </div>
+
+
+
+
+
+
+
+
 		</div> <!--row-->
 	</div>
 </div> <!--container-->
@@ -188,55 +248,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 <?php 
 include 'include/footer.inc';
 ?>
-<?php
- if ($user['name'] != NULL) {
-?>
 
- <div class="_container">
-        <div class="_img">
-            <img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
-        </div>
-        <div class="_info">
-            <h5><?php echo $user['name']; ?></h5>
-            <p><?php echo $user['email']; ?></p>
-            <a href="logout.php">Logout</a>
-        </div>
-    </div>
-<?php
- }
- else{ 
-	 
-	//require 'db_connection.php';
-
-	if(isset($_SESSION['login_id'])){
-		header('Location: index.php');
-		exit;
-	}
-	
-	require 'google_login/google-api/vendor/autoload.php';
-	
-	// Creating new google client instance
-	$client = new Google_Client();
-	
-	// Enter your Client ID
-	$client->setClientId('432882886420-uvdm69kl8nb2b19b2es2o7a3ttct5on4.apps.googleusercontent.com');
-	// Enter your Client Secrect
-	$client->setClientSecret('0KSoCti3JgsmtmNq6VbSyr5g');
-	// Enter the Redirect URL
-	$client->setRedirectUri('https://serviciomadriz.online/buenosairestop/login.php');
-	
-	// Adding those scopes which we want to get (email & profile Information)
-	$client->addScope("email");
-	$client->addScope("profile");
-	 
-	 
-	 
-	 ?>
-	<a href="login.php"><font size="1" face="helvetica" color="blue">Login</a>
-	<a class="login-btn" href="<?php echo $client->createAuthUrl(); ?>">Login original</a>
-<?php 
-}
- ?>
 
 </body>
 </html>
