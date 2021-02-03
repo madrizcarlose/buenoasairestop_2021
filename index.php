@@ -132,7 +132,7 @@ background:#fc0;
 <div class="container" >
 	<div class="template">
 		<div class="row">
-			<div class="col-sm-6 col-md-9 col-lg-10" align="left" valign="center"> 
+			<div class="col-sm-12 col-md-12 col-lg-12" align="left" valign="center"> 
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 			
 
@@ -140,8 +140,8 @@ background:#fc0;
 			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="left">  -->
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
 				<h1 align="left">Guía de Buenos Aires</h1>
-			</div>
-			<div class="col-sm-6 col-md-3 col-lg-2" valign="center" align="right"> 
+		<!--	</div>
+			<div class="col-sm-6 col-md-3 col-lg-2" valign="center" align="right">  -->
 			<?php
 				if(isset($_SESSION['login_id']) == TRUE){
 //  if ($user['name'] != NULL) {
@@ -198,7 +198,7 @@ background:#fc0;
 				</a></p>
 				 <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2" align="right">
-  <small>¿Porque_loguearme?</small>
+  <small align="right">¿Porque loguearme?</small>
   </button>
 			</div>
 <?php 
@@ -306,7 +306,7 @@ include 'include/footer.inc';
         <div class="modal-body">
 		  <h4>El login es opcional.</h4>
 		  <br>
-          <font size="2"><p>El acceso a este sitio es totalmente <strong>gratis</strong>, aun así tenemos contenido detallado en nuestro directorio que solo puede ser visto por usuarios logueados.</p>
+          <font size="2"><p>El acceso a este sitio es totalmente <strong>gratis</strong>,aun así, tenemos contenido detallado en nuestro directorio que solo puede ser visto por usuarios logueados.</p>
           <p>Adicionalmente, al loguarte podrás ser notficada(o) de las actualizaciones o promociones mas recientes de los diferentes sitios listados en nuestro directorio.</p>
 		<br>
           <p>Tu logín no será usado para enviarte correo span o publicidad.</p></font5>
