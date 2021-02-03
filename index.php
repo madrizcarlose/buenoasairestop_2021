@@ -82,6 +82,7 @@ else{
         ._info{
             text-align: center;
 			display: inline-block;
+			line-height: 300%;
         }
         ._info h1{
             margin:10px 0;
@@ -134,7 +135,7 @@ background:#fc0;
 		<div class="row">
 		<div style="float:left;width: 70%;">
 			<!--<div class="col-sm-12 col-md-12 col-lg-12" align="left" valign="center"> -->
-		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
+		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="56" width="117">
 			
 
 	<!--		</div>
@@ -148,7 +149,7 @@ background:#fc0;
 				if(isset($_SESSION['login_id']) == TRUE){
 //  if ($user['name'] != NULL) {
 					?>
-
+<div style="float:left;width: 30%;">
  				<div class="_container">
         			<div class="_img">
             			<img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
@@ -158,7 +159,8 @@ background:#fc0;
             			<p><?php echo $user['email']; ?></p>
             			<a href="logout.php">Logout</a>
         			</div>
-    			</div>
+				</div>
+				</div>
 			<?php
  			}
  			else{ 
