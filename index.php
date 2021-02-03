@@ -213,7 +213,7 @@ background:#fc0;
 	</div>
 </div> <!--container-->
 
-<br><br>
+<br>
  <!-- opciones del menu-->  
 <div class="container" >
 <div class="template">
