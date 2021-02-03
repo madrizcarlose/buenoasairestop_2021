@@ -199,7 +199,7 @@ background:#fc0;
 				</a>
 				 <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2" align="right">
-  <small align="right">¿Porque4loguearme?</small>
+  <small align="right">¿Porque5loguearme?</small>
   </button></p>
 			</div>
 <?php 
