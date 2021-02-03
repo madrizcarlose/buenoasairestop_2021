@@ -82,7 +82,7 @@ else{
         ._info{
             text-align: center;
 			display: inline-block;
-			line-height: 300%;
+			line-height: 50%;
         }
         ._info h1{
             margin:10px 0;
