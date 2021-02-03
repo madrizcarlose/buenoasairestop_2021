@@ -155,8 +155,8 @@ background:#fc0;
             			<img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
         			</div>
         			<div class="_info">
-            			<h5><?php echo $user['name']; ?></h5>
-            			<p><?php echo $user['email']; ?></p>
+            			<p style style="line-height: 50%"><?php echo $user['name']; ?></p>
+            			<p style style="line-height: 50%"><?php echo $user['email']; ?></p>
             			<a href="logout.php">Logout</a>
         			</div>
 				</div>
@@ -195,11 +195,11 @@ background:#fc0;
 			<div align="right" style="float:left;width: 30%;">
 			<p style style="line-height: 100%">
 				<a href="<?php echo $client->createAuthUrl(); ?>">
-					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="24" width="78">
+					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="22" width="70">
 				</a><br>
 				 <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2" align="right">
-  <small align="right">¿Porque6loguearme?</small>
+  <small align="right">¿Porque7loguearme?</small>
   </button></p>
 			</div>
 <?php 
