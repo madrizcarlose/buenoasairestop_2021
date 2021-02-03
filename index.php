@@ -137,11 +137,11 @@ background:#fc0;
 			
 
 			</div>
-			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="center"> 
+			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="left"> 
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
 				<h1 align="center">Guía de Buenos Aires</h1>
 			</div>
-			<div class="col-sm-2 col-md-3 col-lg-2" valign="center" align="left"> 
+			<div class="col-sm-2 col-md-3 col-lg-2" valign="center" align="right"> 
 			<?php
 				if(isset($_SESSION['login_id']) == TRUE){
 //  if ($user['name'] != NULL) {
@@ -194,12 +194,9 @@ background:#fc0;
 			</div>
 			<div>
 				<a href="<?php echo $client->createAuthUrl(); ?>">
-					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="16" width="52">
+					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="24" width="78">
 				</a></p>
-				<a href="<?php echo $client->createAuthUrl(); ?>">
-					¿Porque loguearme?
-				</a>
-				  <!-- Button to Open the Modal -->
+				 <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">
   ¿Porque loguearme?
   </button>
@@ -301,18 +298,18 @@ include 'include/footer.inc';
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h1 class="modal-title">¿Por que loguearme?</h1>
+          <h2 class="modal-title">¿Por que loguearme?</h2>
           <button type="button" class="close" data-dismiss="modal">×</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
-		  <h3>El login es opcional ..</h3>
+		  <h4>El login es opcional ..</h4>
 		  <br>
-          <p>El acceso a este sitio es totalmente <bold>gratis</bold>, aun así tenemos contenido detallado que solo puede ser visto por usuarios logueados.</p>
-          <p>Adicionalmente, al loguarte podrás ser notficada de las actualizaciones o promociones mas recientes de los diferentes sitios listados en nustro directorio.</p>
+          <h5><p>El acceso a este sitio es totalmente <strong>gratis</strong>, aun así tenemos contenido detallado en nistro directorio que solo puede ser visto por usuarios logueados.</p>
+          <p>Adicionalmente, al loguarte podrás ser notficada(o) de las actualizaciones o promociones mas recientes de los diferentes sitios listados en nuestro directorio.</p>
 		<br>
-          <p>Tu logín no será usado para enviarte correp span o publicidad. .</p>
+          <p>Tu logín no será usado para enviarte correo span o publicidad.</p><h/5>
         </div>
         
         <!-- Modal footer -->
