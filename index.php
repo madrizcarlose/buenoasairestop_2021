@@ -152,10 +152,11 @@ background:#fc0;
 					?>
 <div style="float:right;width: 30%;">
  				<div class="_container">
-        			<div class="_img" align="center">
+        			
+        			<div class="_info">
+					<div class="_img" align="center">
             			<img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
         			</div>
-        			<div class="_info">
             			<p style style="line-height: 50%"><?php echo $user['name']; ?></p>
             			<p style style="line-height: 50%"><?php echo $user['email']; ?></p>
             			<a href="logout.php">Logout</a>
