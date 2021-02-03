@@ -135,7 +135,7 @@ background:#fc0;
 			<div class="col-sm-12 col-md-12 col-lg-12" align="left" valign="center"> 
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 			
-<div style="float:left;width: 70%;>
+<div style="float:left;width: 70%;">
 	<!--		</div>
 			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="left">  -->
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
@@ -189,7 +189,7 @@ background:#fc0;
 	 
 	 ?>
 			
-			<div align="right" style="float:left;width: 30%;>
+			<div align="right" style="float:left;width: 30%;">
 				<a href="<?php echo $client->createAuthUrl(); ?>">
 					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="24" width="78">
 				</a></p>
