@@ -139,7 +139,7 @@ background:#fc0;
 			</div>
 			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="left"> 
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
-				<h1 align="center">Guía de Buenos Aires</h1>
+				<h1 align="left">Guía de Buenos Aires</h1>
 			</div>
 			<div class="col-sm-2 col-md-3 col-lg-2" valign="center" align="right"> 
 			<?php
@@ -192,7 +192,7 @@ background:#fc0;
 					<img src="images/app/utils/signin-google.png"  alt="" longdesc="" id="img_logo"  height="52" width="200">
 				</a> -->
 			</div>
-			<div>
+			<div align="right">
 				<a href="<?php echo $client->createAuthUrl(); ?>">
 					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="24" width="78">
 				</a></p>
@@ -298,18 +298,18 @@ include 'include/footer.inc';
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h2 class="modal-title">¿Por que loguearme?</h2>
+          <h4 class="modal-title">¿Por que loguearme?</h4>
           <button type="button" class="close" data-dismiss="modal">×</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
-		  <h4>El login es opcional ..</h4>
+		  <h5>El login es opcional.</h5>
 		  <br>
-          <h5><p>El acceso a este sitio es totalmente <strong>gratis</strong>, aun así tenemos contenido detallado en nistro directorio que solo puede ser visto por usuarios logueados.</p>
+          <font size="2"><p>El acceso a este sitio es totalmente <strong>gratis</strong>, aun así tenemos contenido detallado en nuestro directorio que solo puede ser visto por usuarios logueados.</p>
           <p>Adicionalmente, al loguarte podrás ser notficada(o) de las actualizaciones o promociones mas recientes de los diferentes sitios listados en nuestro directorio.</p>
 		<br>
-          <p>Tu logín no será usado para enviarte correo span o publicidad.</p><h/5>
+          <p>Tu logín no será usado para enviarte correo span o publicidad.</p></font5>
         </div>
         
         <!-- Modal footer -->
