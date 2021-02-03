@@ -189,7 +189,20 @@ if(isset($_SESSION['login_id']) == TRUE){
 	 ?>
 	<div>
 	<a href="<?php echo $client->createAuthUrl(); ?>">
-	<img src="images/app/utils/signin-google.png"  alt="" longdesc="" id="img_logo"  height="52" width="200">
+	<img src="images/app/utils/signin-google.png"  alt="" longdesc="" id="img_logo"  height="52" width="200">Login
+</a>
+<a href="<?php echo $client->createAuthUrl(); ?>">
+	¿Porque loguearme?
+</a>
+	
+	
+</div>
+<div>
+	<a href="<?php echo $client->createAuthUrl(); ?>">
+	<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" >Login
+</a>
+<a href="<?php echo $client->createAuthUrl(); ?>">
+	¿Porque loguearme?
 </a>
 	
 	
