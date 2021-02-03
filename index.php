@@ -188,13 +188,13 @@ background:#fc0;
 	 
 	 ?>
 			<div>
-				<a href="<?php echo $client->createAuthUrl(); ?>">
+			<!-- 	<a href="<?php //echo $client->createAuthUrl(); ?>">
 					<img src="images/app/utils/signin-google.png"  alt="" longdesc="" id="img_logo"  height="52" width="200">
-				</a>
+				</a> -->
 			</div>
 			<div>
 				<a href="<?php echo $client->createAuthUrl(); ?>">
-					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="67" width="217">
+					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="109" width="34">
 				</a>
 				<a href="<?php echo $client->createAuthUrl(); ?>">
 					¿Porque loguearme?
@@ -269,6 +269,10 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
 s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
 var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 })();
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 </script>
 <!-- /GetButton.io widget -->
   
@@ -294,8 +298,11 @@ include 'include/footer.inc';
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
+	   dflgjgohjñ lgf{hgh 
+		gflñhflñhf 
+		hash_hkdfzzzz
+		4444
+		      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
@@ -304,6 +311,38 @@ include 'include/footer.inc';
   </div>
 </div>
 
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
 
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
 </body>
 </html>
