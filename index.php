@@ -149,9 +149,9 @@ background:#fc0;
 				if(isset($_SESSION['login_id']) == TRUE){
 //  if ($user['name'] != NULL) {
 					?>
-<div style="float:left;width: 30%;">
+<div style="float:right;width: 30%;">
  				<div class="_container">
-        			<div class="_img">
+        			<div class="_img" align="center">
             			<img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
         			</div>
         			<div class="_info">
@@ -199,7 +199,7 @@ background:#fc0;
 				</a><br>
 				 <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2" align="right">
-  <small align="right">¿Porque8loguearme?</small>
+  <small align="right">¿Porque1loguearme?</small>
   </button></p>
 			</div>
 <?php 
