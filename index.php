@@ -132,10 +132,11 @@ background:#fc0;
 <div class="container" >
 	<div class="template">
 		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12" align="left" valign="center"> 
+		<div style="float:left;width: 70%;">
+			<!--<div class="col-sm-12 col-md-12 col-lg-12" align="left" valign="center"> -->
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 			
-<div style="float:left;width: 70%;">
+
 	<!--		</div>
 			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="left">  -->
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
@@ -195,7 +196,7 @@ background:#fc0;
 				</a></p>
 				 <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2" align="right">
-  <small align="right">¿Porque3loguearme?</small>
+  <small align="right">¿Porque4loguearme?</small>
   </button>
 			</div>
 <?php 
