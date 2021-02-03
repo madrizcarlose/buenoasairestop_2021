@@ -193,13 +193,14 @@ background:#fc0;
 	 ?>
 			
 			<div align="right" style="float:left;width: 30%;">
+			<p style style="line-height: 300%">Línea 1
 				<a href="<?php echo $client->createAuthUrl(); ?>">
 					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="24" width="78">
-				</a></p>
+				</a>
 				 <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2" align="right">
   <small align="right">¿Porque4loguearme?</small>
-  </button>
+  </button></p>
 			</div>
 <?php 
 }
