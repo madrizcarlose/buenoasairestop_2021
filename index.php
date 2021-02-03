@@ -194,8 +194,8 @@ background:#fc0;
 			</div>
 			<div>
 				<a href="<?php echo $client->createAuthUrl(); ?>">
-					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="34" width="109">
-				</a>
+					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="16" width="52">
+				</a></p>
 				<a href="<?php echo $client->createAuthUrl(); ?>">
 					¿Porque loguearme?
 				</a>
@@ -349,12 +349,12 @@ include 'include/footer.inc';
 <div class="container">
   <h2>Modal Scroll Example</h2>
   <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
     Open modal
   </button>
 
   <!-- The Modal -->
-  <div class="modal" id="myModal">
+  <div class="modal" id="myModal2">
     <div class="modal-dialog">
       <div class="modal-content">
       
