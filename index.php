@@ -132,34 +132,34 @@ background:#fc0;
 <div class="container" >
 	<div class="template">
 		<div class="row">
-			<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
+			<div class="col-sm-2 col-md-4 col-lg-4" align="left"> 
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 			
 
 			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4" valign="center" align="center"> 
+			<div class="col-sm-6 col-md-4 col-lg-6" valign="center" align="center"> 
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
 				<h1 align="left">Guía de Buenos Aires</h1>
 			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4" valign="center" align="center"> 
+			<div class="col-sm-4 col-md-4 col-lg-2" valign="center" align="center"> 
 			<?php
-if(isset($_SESSION['login_id']) == TRUE){
+				if(isset($_SESSION['login_id']) == TRUE){
 //  if ($user['name'] != NULL) {
-?>
+					?>
 
- <div class="_container">
-        <div class="_img">
-            <img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
-        </div>
-        <div class="_info">
-            <h5><?php echo $user['name']; ?></h5>
-            <p><?php echo $user['email']; ?></p>
-            <a href="logout.php">Logout</a>
-        </div>
-    </div>
-<?php
- }
- else{ 
+ 				<div class="_container">
+        			<div class="_img">
+            			<img src="<?php echo $user['profile_image']; ?>" alt="<?php echo $user['name']; ?>">
+        			</div>
+        			<div class="_info">
+            			<h5><?php echo $user['name']; ?></h5>
+            			<p><?php echo $user['email']; ?></p>
+            			<a href="logout.php">Logout</a>
+        			</div>
+    			</div>
+			<?php
+ 			}
+ 			else{ 
 	 
 	//require 'db_connection.php';
 
@@ -168,9 +168,9 @@ if(isset($_SESSION['login_id']) == TRUE){
 	//	exit;
 	}
 	
-	require 'google_login/google-api/vendor/autoload.php';
+			require 'google_login/google-api/vendor/autoload.php';
 	
-	// Creating new google client instance
+			// Creating new google client instance
 	$client = new Google_Client();
 	
 	// Enter your Client ID
@@ -187,37 +187,23 @@ if(isset($_SESSION['login_id']) == TRUE){
 	 
 	 
 	 ?>
-	<div>
-	<a href="<?php echo $client->createAuthUrl(); ?>">
-	<img src="images/app/utils/signin-google.png"  alt="" longdesc="" id="img_logo"  height="52" width="200">Login
-</a>
-<a href="<?php echo $client->createAuthUrl(); ?>">
-	¿Porque loguearme?
-</a>
-	
-	
-</div>
-<div>
-	<a href="<?php echo $client->createAuthUrl(); ?>">
-	<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" >Login
-</a>
-<a href="<?php echo $client->createAuthUrl(); ?>">
-	¿Porque loguearme?
-</a>
-	
-	
-</div>
+			<div>
+				<a href="<?php echo $client->createAuthUrl(); ?>">
+					<img src="images/app/utils/signin-google.png"  alt="" longdesc="" id="img_logo"  height="52" width="200">
+				</a>
+			</div>
+			<div>
+				<a href="<?php echo $client->createAuthUrl(); ?>">
+					<img src="images/app/utils/login-google.png"  alt="" longdesc="" id="img_logo" height="67" width="217">
+				</a>
+				<a href="<?php echo $client->createAuthUrl(); ?>">
+					¿Porque loguearme?
+				</a>
+			</div>
 <?php 
 }
  ?>
  </div>
-
-
-
-
-
-
-
 
 		</div> <!--row-->
 	</div>
@@ -291,6 +277,32 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 <?php 
 include 'include/footer.inc';
 ?>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </body>
