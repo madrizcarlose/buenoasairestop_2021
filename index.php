@@ -132,7 +132,7 @@ background:#fc0;
 <div class="container" >
 	<div class="template">
 		<div class="row">
-			<div class="col-sm-8 col-md-9 col-lg-10" align="left"> 
+			<div class="col-sm-8 col-md-9 col-lg-10" align="left" valign="center"> 
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 			
 
@@ -198,7 +198,7 @@ background:#fc0;
 				</a></p>
 				 <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2" align="right">
-  ¿Porque loguearme?
+  ¿Porqueloguearme?
   </button>
 			</div>
 <?php 
