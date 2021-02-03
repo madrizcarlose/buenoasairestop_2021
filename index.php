@@ -72,7 +72,7 @@ else{
             margin: 0 auto;
             border-radius: 50%;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-			display: inline-block;
+			
 			vertical-align: top;
         }
         ._img > img{
@@ -199,7 +199,7 @@ background:#fc0;
 				</a><br>
 				 <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2" align="right">
-  <small align="right">¿Porque7loguearme?</small>
+  <small align="right">¿Porque8loguearme?</small>
   </button></p>
 			</div>
 <?php 
