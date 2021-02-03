@@ -132,16 +132,16 @@ background:#fc0;
 <div class="container" >
 	<div class="template">
 		<div class="row">
-			<div class="col-sm-2 col-md-4 col-lg-4" align="left"> 
+			<div class="col-sm-2 col-md-3 col-lg-2" align="left"> 
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 			
 
 			</div>
-			<div class="col-sm-6 col-md-4 col-lg-6" valign="center" align="center"> 
+			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="center"> 
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
-				<h1 align="left">Guía de Buenos Aires</h1>
+				<h1 align="center">Guía de Buenos Aires</h1>
 			</div>
-			<div class="col-sm-4 col-md-4 col-lg-2" valign="center" align="center"> 
+			<div class="col-sm-2 col-md-3 col-lg-2" valign="center" align="left"> 
 			<?php
 				if(isset($_SESSION['login_id']) == TRUE){
 //  if ($user['name'] != NULL) {
@@ -199,6 +199,10 @@ background:#fc0;
 				<a href="<?php echo $client->createAuthUrl(); ?>">
 					¿Porque loguearme?
 				</a>
+				  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">
+  ¿Porque loguearme?
+  </button>
 			</div>
 <?php 
 }
@@ -282,76 +286,13 @@ $('#myModal').on('shown.bs.modal', function () {
 include 'include/footer.inc';
 ?>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-	   dflgjgohjñ lgf{hgh 
-		gflñhflñhf 
-		hash_hkdfzzzz
-		4444
-		      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+
 
 <div class="container">
-  <h2>Modal Example</h2>
-  <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button>
-
-  <!-- The Modal -->
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
   
-</div>
-
-
-<div class="container">
-  <h2>Modal Scroll Example</h2>
-  <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
-    Open modal
-  </button>
 
   <!-- The Modal -->
   <div class="modal" id="myModal2">
@@ -360,22 +301,23 @@ include 'include/footer.inc';
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h1 class="modal-title">Modal Heading</h1>
+          <h1 class="modal-title">¿Por que loguearme?</h1>
           <button type="button" class="close" data-dismiss="modal">×</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
-          <h3>Some text to enable scrolling..</h3>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  <h3>El login es opcional ..</h3>
+		  <br>
+          <p>El acceso a este sitio es totalmente <bold>gratis</bold>, aun así tenemos contenido detallado que solo puede ser visto por usuarios logueados.</p>
+          <p>Adicionalmente, al loguarte podrás ser notficada de las actualizaciones o promociones mas recientes de los diferentes sitios listados en nustro directorio.</p>
+		<br>
+          <p>Tu logín no será usado para enviarte correp span o publicidad. .</p>
         </div>
         
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
         </div>
         
       </div>
