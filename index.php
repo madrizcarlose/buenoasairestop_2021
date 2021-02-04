@@ -215,7 +215,7 @@ background:#fc0;
 
 <div class="container" >
 <div class="template">
-    <div class="row">
+    <div class="row" align="right">
 <div class='onesignal-customlink-container'></div>
 </div></div></div>
 <br>
