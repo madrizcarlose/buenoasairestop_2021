@@ -213,6 +213,11 @@ background:#fc0;
 	</div>
 </div> <!--container-->
 
+<div class="container" >
+<div class="template">
+    <div class="row">
+<div class='onesignal-customlink-container'></div>
+</div></div></div>
 <br>
  <!-- opciones del menu-->  
 <div class="container" >
