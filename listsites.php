@@ -118,7 +118,7 @@ $products = json_decode($data,true);
 		</div> <!--row-->
 	</div>
 </div> <!--container-->
-<div class='onesignal-customlink-container'></div>
+
 
 <br>
 <div class="custom-container container" >
