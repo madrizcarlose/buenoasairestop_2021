@@ -47,10 +47,6 @@ else{
 	<div style="float:left;width: 70%;">
 			<!--<div class="col-sm-12 col-md-12 col-lg-12" align="left" valign="center"> -->
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="56" width="117">
-	
-				  <img src="images/app/utils/logo12.png"  alt="" longdesc="" id="img_logo" height="50%" width="50%" >
-			
-
 	<!--		</div>
 			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="left">  -->
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
