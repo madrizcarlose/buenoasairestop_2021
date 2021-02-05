@@ -47,8 +47,8 @@ else{
 	<div style="float:left;width: 70%;">
 			<!--<div class="col-sm-12 col-md-12 col-lg-12" align="left" valign="center"> -->
 		  		<img src="images/app/utils/logo2.jpg"  alt="" longdesc="" id="img_logo"  height="56" width="117">
-				  <img src="images/app/utils/logo10.png"  alt="" longdesc="" id="img_logo"  height="100" width="100" >
-				  <img src="images/app/utils/logo12.png"  alt="" longdesc="" id="img_logo" >
+	
+				  <img src="images/app/utils/logo12.png"  alt="" longdesc="" id="img_logo" height="50%" width="50%" >
 			
 
 	<!--		</div>
