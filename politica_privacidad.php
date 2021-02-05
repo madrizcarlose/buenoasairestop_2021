@@ -5,9 +5,7 @@
   <?php include 'include/head.inc';?>
 </head>
 
-
 <body>
-
 <!-- logo y titulo-->
 <div class="container">
 <div class="template">
@@ -30,10 +28,10 @@
 </br></br>
 
 <div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
-<h2><font color=#086A87>Política de Privacidad</h2>
-<br>
-<font color=#0B2161 align="justify">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
+		<h2><font color=#086A87>Política de Privacidad</h2>
+		<br>
+		<font color=#0B2161 align="justify">
 
 <blockquote>
 
@@ -112,20 +110,9 @@ vamosba@gmail.com</p>
 </blockquote>
 
 </div>
-		</div>
-	
-
-
- <br>
+</div>
+<br>
  
- 
-	
-
-	
-
-  
-
-
 <!--pie de pagina-->
 <?php include 'include/footer.inc';?> 
 

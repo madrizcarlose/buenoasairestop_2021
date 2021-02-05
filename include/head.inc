@@ -14,11 +14,6 @@
   
 <link rel="shortcut icon" href="images/app/utils/ico.png">
   
-
-<!--
-	
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
--->
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -30,6 +25,7 @@
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- one signal -->
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   window.OneSignal = window.OneSignal || [];
@@ -40,18 +36,6 @@
   });
 </script>
   
- <!--
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css2/bootstrap.min.css">
- 
-
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
- // <link href="/css/bootstrap.css" rel="stylesheet">
-  <link href="/css/bootstrap-rating.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/css/mis_estilos.css" media="screen" />
-   -->
  	
 <script type="text/javascript" src="dist/js/jquery-1.10.2.js"></script>
 	

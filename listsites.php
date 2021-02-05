@@ -19,38 +19,7 @@ $lon = -58.4354472;
 //$url = "http://localhost/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
 $url = "https://serviciomadriz.online/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
 $data = file_get_contents($url);
-
-
-//$url = "http://localhost/buenosairestop/get_sites.php";
-
-//$ch = curl_init();
-
-    //curl_setopt($ch, CURLOPT_HEADER, 0);
-    //curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    //curl_setopt($ch, CURLOPT_URL, $url);
-   // curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-    //$data = curl_exec($ch);
-    //curl_close($ch);
-
-   
-
-//$data = file_get_contents("http://localhost/buenosairestop/get_sites.php");
 $products = json_decode($data,true);
-
-//$result = file_get_contents($url);
-//$array = json_decode($result, true);
-//var_dump($products);
- 
-//$products = $data;
-//-- 
-//-- foreach ($products as $product) {
- //--    echo '<pre>';
- //--    print_r($product);
-  //--   echo '</pre>';
-//-- }
-//-----------------------------------------
-//require "get_sites.php";
 ?>
 
 <!DOCTYPE html>
@@ -103,7 +72,7 @@ $products = json_decode($data,true);
 
 <body>
 <br>
-<!-- encabezado-->
+<!-- ENCABEZADO-->
 <div class="custom-container container">
 	<div class="template">
 		<div class="row">
@@ -116,16 +85,16 @@ $products = json_decode($data,true);
 				<h1 align="left">Guia - Mejores sitios</h1>
 			</div>
 		</div> <!--row-->
-	</div>
+	</div> <!--template-->
 </div> <!--container-->
-
+<!-- FIN DEL ENCABEZADO -->
 
 <br>
 <div class="custom-container container" >
 <div class="template">
-	<div class="container-fluid" style="background-color:#fafafa;">
-		<br><br>
-		<div class="row gutter-30" >
+<div class="container-fluid" style="background-color:#fafafa;">
+	<br><br>
+<div class="row gutter-30" >
 					<form target="POPUPW" action="maps/map2a.php" method="post" 
 				onsubmit="POPUPW = window.open('about:blank','POPUPW',
    'width=600,height=400');">
@@ -144,14 +113,14 @@ $longitud = count($products);
 
 //while($row = $products->fetch_assoc()) {
   //foreach ($products as $row) {
-    for($i=0; $i<$longitud; $i++) {
+for($i=0; $i<$longitud; $i++) {
   
-      $row = $products[$i];
+  $row = $products[$i];
      // var_dump($row);
-  $random = mt_rand($start, $max);
-  $image_name2 = $carpeta2  . $random . $extension2;
-  $image_name2= "img src='" . $image_name2 . "'  width=52,height=28 id='imagen' class='imagen'/> ";
-  $image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' class='imagen'/> ";
+  //$random = mt_rand($start, $max);
+  //$image_name2 = $carpeta2  . $random . $extension2;
+  //$image_name2= "img src='" . $image_name2 . "'  width=52,height=28 id='imagen' class='imagen'/> ";
+  //$image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' class='imagen'/> ";
 	$foto = "images/sites/" . $row['imagen_negocio'] ;
 ?>
 <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
@@ -160,28 +129,26 @@ $longitud = count($products);
     <div class="card-body">
         <h5 class="card-title" >
         <div id="site2<?php echo $row['codi_negocio']; ?>">
-            <h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>
-            
+            <h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>        
         </div>
         </h5>
        <p>
 		    <span class="glyphicon glyphicon-earphone"></span>
 		    <span style="color:black; text-algin:center;display-block:inline;">
-            <?php print $row['telef_negocio'];?>
-           
+            <?php print $row['telef_negocio'];?>        
             <?php 
             if ($row['whatsapp'] != NULL) {
               ?>
-            <a href="https://api.whatsapp.com/send?phone=<?php print $row['whatsapp'];?>&text=Hola, los ubiqué en *https://serviciomadriz.online/buenosairestop*." target="blank" >
-            <img src="images/app/utils/whatsapp_ico.png"  height="22" width="22"><br>
-				    </a>
-            <?php  }?>
-           
+              <a href="https://api.whatsapp.com/send?phone=<?php print $row['whatsapp'];?>&text=Hola, los ubiqué en *https://serviciomadriz.online/buenosairestop*." target="blank" >
+              <img src="images/app/utils/whatsapp_ico.png"  height="22" width="22"><br>
+				      </a>
+            <?php  } ?>     
           </span>
         <p>
         <span class="glyphicon glyphicon-map-marker"></span>
         <?php print $row['direccion_negocio'];?>
     </div> <!-- class="card-body" -->
+
     <ul class="list-group list-group-flush">
         <li class="list-group-item"  style="background-color:#fafafa;">
            <div style="width: 50%; float:left">
@@ -189,9 +156,9 @@ $longitud = count($products);
           </div>
           <div style="width: 50%; float:right;" align="right">
             <?php 
-            $coord = $row['coord2'];
-            $tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
-            echo $tira;
+              $coord = $row['coord2'];
+              $tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
+              echo $tira;
             ?>
             <font face="helvetica"><small><?php print $row['distance']; ?>&nbsp;km</font></small>
           </div>
@@ -204,10 +171,10 @@ $longitud = count($products);
 }  //fin de bucle
 ?>
 			
-</div> <!-- row -->
-</div>
+</div> <!-- row gutter-30 -->
+</div> <!-- container-fluid -->
 </div> <!-- template -->
-</div>
+</div> <!-- custom-container container -->
 
 <br><br><br><br>
 <!--pie de pagina-->
