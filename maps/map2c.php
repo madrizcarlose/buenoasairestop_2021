@@ -1,48 +1,80 @@
 <?php
+
+
+//print ('mmm');
 $username = "u887045922_vamosba";
 $password = "Carlosyana_99";
 $database = "u887045922_vamosba";
 $server = "185.201.11.107";
+$lat2 = -34.5737177;
+$lon2 = -58.4354472;
+session_start();
+//$var_sql3 = $_SESSION["s_sql"];
+ $var_sql3 = "SELECT N.*, (        3959 * acos(cos(radians('$lat2'))*   cos(radians(N.lat))*cos(radians(N.lon)-radians('$lon2')) - (sin(radians('$lat2'))*sin( radians( N.lat )))*-1 ) ) As Distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='c001' AND Activo=1 Order by Distance;";
+
+ 
+$var_sql2 = urldecode($var_sql3);
+
+//print($var_sql2 );
+//$var_sql = "xxxx";
+
 
 // Start XML file, create parent node
-$doc = domxml_new_doc("1.0");
-$node = $doc->create_element("markers");
-$parnode = $doc->append_child($node);
+?>
+<?php
+//print ($yy);
+?>
+<?php
+//print ($var_sql2);
+?>
+<?php
+if (1==1) {
+$dom = new DOMDocument("1.0");
+$node = $dom->createElement("markers");
+$parnode = $dom->appendChild($node);
 
 // Opens a connection to a MySQL server
-$connection=mysql_connect ($server, $username, $password);
-if (!$connection) {
-  die('Not connected : ' . mysql_error());
-}
+
+$connection=mysqli_connect ($server, $username, $password,$database);
+if (!$connection) { 
+ die('Not connected : ' . mysqli_error());
+ }
 
 // Set the active MySQL database
-$db_selected = mysql_select_db($database, $connection);
-if (!$db_selected) {
-  die ('Can\'t use db : ' . mysql_error());
-}
+
+// $db_selected = mysqli_select_db($connection);
+// if (!$db_selected) {
+//   die ('Can\'t use db : ' . mysql_error());
+// }
 
 // Select all the rows in the markers table
-$query = "SELECT * FROM markers WHERE 1";
-$query = "SELECT * FROM t_negocios Where Codi_negocio=1";
-$result = mysql_query($query);
+
+//$query = "SELECT * FROM t_negocios Where lat<>0";
+$query = $var_sql2;
+$result = mysqli_query($connection,$query);
 if (!$result) {
-  die('Invalid query: ' . mysql_error());
+ // print ("$var_sql");
+ // print ($var_sql);
+  die('Invalid query: ' . mysqli_error());
 }
 
 header("Content-type: text/xml");
 
 // Iterate through the rows, adding XML nodes for each
-while ($row = @mysql_fetch_assoc($result)){
-  // Add to XML document node
-  $node = $doc->create_element("marker");
-  $newnode = $parnode->append_child($node);
 
-  $newnode->set_attribute("id", $row['codi_negocio']);
-  $newnode->set_attribute("name", $row['nomb_negocio']);
-  
+while ($row = mysqli_fetch_assoc($result)){
+  // Add to XML document node
+  $node = $dom->createElement("marker");
+  $newnode = $parnode->appendChild($node);
+  $newnode->setAttribute("id",$row['codi_negocio']);
+  $newnode->setAttribute("name",$row['nomb_negocio']);
+  $newnode->setAttribute("address", $row['direccion_negocio']);
+  $newnode->setAttribute("lat", $row['lat']);
+  $newnode->setAttribute("lng", $row['lon']);
+  $newnode->setAttribute("type", $row['type']);
+  $newnode->setAttribute("distance", $row['Distance']);
 }
 
-$xmlfile = $doc->dump_mem();
-echo $xmlfile;
-
+echo $dom->saveXML();
+}
 ?>
