@@ -50,7 +50,10 @@ $longitud = count($products);
 for($i=0; $i<$longitud; $i++) {
   
   $row = $products[$i];
+  print $i;
+  print "&nbsp;";
   print $row['nomb_negocio'];
+  print "<hr>";
 }
 
   ?>
