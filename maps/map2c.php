@@ -17,7 +17,7 @@ $categoria = $_GET['categoria'];
  
 $var_sql2 = urldecode($var_sql3);
 
-print($var_sql2 );
+//print($var_sql2 );
 //$var_sql = "xxxx";
 
 
