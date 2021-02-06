@@ -67,7 +67,7 @@ for($i=0; $i<$longitud; $i++) {
   print "&nbsp;&nbsp;<strong>";
   print $row['nomb_negocio'];
   print "</strong></p>";
-  print $row['direccion_negocio']
+  print $row['direccion_negocio'];
   print "<hr>";
 }
 
