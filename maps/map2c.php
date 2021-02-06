@@ -4,10 +4,13 @@ session_start();
 $lat2  = $_SESSION["lat"];
 $lon2  = $_SESSION["lon"];
 //print ('mmm');
-$username = "u346263277_guia";
-$password = "Anaycarlos_99";
-$database = "u346263277_guia";
-$server = "localhost";
+
+$username = "u887045922_vamosba";
+$password = "Carlosyana_99";
+$database = "u887045922_vamosba";
+$server = "185.201.11.107";
+
+
 $var_sql = $_GET["var_sql"];
 
 session_start();
