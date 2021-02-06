@@ -12,6 +12,7 @@ $lon = -58.4354472;
 //$var_sql3 = $_SESSION["s_sql"];
 //$categoriaID = $_SESSION["categoria"];
 $categoria = $_GET['categoria'];
+//$categoria = 'c003';
  $var_sql3 = "SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radians( N.lat ) ) * cos( radians( N.lon ) - radians('$lon') ) + sin( radians('$lat') ) * sin( radians( N.lat ) ) ) )*1.60934),1)  AS distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoria. "' AND Activo=1 Order By Distance ASC;";
 
  
@@ -51,8 +52,8 @@ if (!$connection) {
 
 // Select all the rows in the markers table
 
-$query = "SELECT * FROM t_negocios Where lat<>0";
-//$query = $var_sql2;
+//$query = "SELECT * FROM t_negocios Where lat<>0";
+$query = $var_sql3;
 $result = mysqli_query($connection,$query);
 if (!$result) {
  //print ("$var_sql");
