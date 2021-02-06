@@ -10,7 +10,7 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
 ?>
 <?php 
 //print("sql: ");
-print($var_sql) ?>
+//print($var_sql) ?>
 <!DOCTYPE html >
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -57,7 +57,7 @@ for($i=0; $i<$longitud; $i++) {
 }
 
   ?>
-AQUI VA EL LISYTADO
+
     </div>
     <script>
 	
