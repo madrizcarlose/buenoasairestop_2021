@@ -37,14 +37,17 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
 <html>
   <body>
   <div class="custom-container container" >
-<div class="template">
-<div class="container-fluid" style="background-color:#fafafa;">
-	
-<div class="row gutter-30" >
-  <div id="map" class="col-xs-12 col-sm-12 col-md-8 col-lg-8"  >	
-    <div></div>
+  <div class="template">
+  <div class="container-fluid" style="background-color:#fafafa;">
+	  <div class="row gutter-30" >
+      <div  class="col-xs-12 col-sm-12 col-md-8 col-lg-8"  >	
+    ddd
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  >	
+      ffff
+    </div>
+  </div></div></div></div>
+<div id="map"></div>
 <div id="list">
   <?php
 
@@ -66,8 +69,7 @@ for($i=0; $i<$longitud; $i++) {
 
   ?>
  </div>
-    </div>
-    </div></div></div></div>
+   
     <script>
 	
 	
