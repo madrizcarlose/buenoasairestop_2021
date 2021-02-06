@@ -6,8 +6,8 @@ $username = "u887045922_vamosba";
 $password = "Carlosyana_99";
 $database = "u887045922_vamosba";
 $server = "185.201.11.107";
-$lat2 = -34.5737177;
-$lon2 = -58.4354472;
+$lat = -34.5737177;
+$lon = -58.4354472;
 //session_start();
 //$var_sql3 = $_SESSION["s_sql"];
 //$categoriaID = $_SESSION["categoria"];
@@ -51,11 +51,11 @@ if (!$connection) {
 
 // Select all the rows in the markers table
 
-//$query = "SELECT * FROM t_negocios Where lat<>0";
-$query = $var_sql2;
+$query = "SELECT * FROM t_negocios Where lat<>0";
+//$query = $var_sql2;
 $result = mysqli_query($connection,$query);
 if (!$result) {
- // print ("$var_sql");
+ //print ("$var_sql");
  // print ($var_sql);
   die('Invalid query: ' . mysqli_error());
 }
@@ -74,7 +74,7 @@ while ($row = mysqli_fetch_assoc($result)){
   $newnode->setAttribute("lat", $row['lat']);
   $newnode->setAttribute("lng", $row['lon']);
   $newnode->setAttribute("type", $row['type']);
-  $newnode->setAttribute("distance", $row['Distance']);
+ // $newnode->setAttribute("distance", $row['Distance']);
 }
 
 echo $dom->saveXML();
