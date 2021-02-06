@@ -8,9 +8,10 @@ $database = "u887045922_vamosba";
 $server = "185.201.11.107";
 $lat2 = -34.5737177;
 $lon2 = -58.4354472;
-session_start();
+//session_start();
 //$var_sql3 = $_SESSION["s_sql"];
- $var_sql3 = "SELECT N.*, (        3959 * acos(cos(radians('$lat2'))*   cos(radians(N.lat))*cos(radians(N.lon)-radians('$lon2')) - (sin(radians('$lat2'))*sin( radians( N.lat )))*-1 ) ) As Distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='c001' AND Activo=1 Order by Distance;";
+$categoriaID = $_SESSION["categoria"];
+ $var_sql3 = "SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radians( N.lat ) ) * cos( radians( N.lon ) - radians('$lon') ) + sin( radians('$lat') ) * sin( radians( N.lat ) ) ) )*1.60934),1)  AS distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoriaID. "' AND Activo=1 Order By Distance ASC;";
 
  
 $var_sql2 = urldecode($var_sql3);
