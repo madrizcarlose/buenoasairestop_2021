@@ -40,7 +40,7 @@ print($var_sql) ?>
 <div id="list">
   <?php
 
-$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
+$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?categoria=" . $_POST['categoria'];
 $data = file_get_contents($url);
 $products = json_decode($data,true);
 $longitud = count($products);
@@ -54,7 +54,7 @@ for($i=0; $i<$longitud; $i++) {
 }
 
   ?>
-
+AQUI VA EL LISYTADO
     </div>
     <script>
 	
