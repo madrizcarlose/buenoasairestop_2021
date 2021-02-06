@@ -20,7 +20,7 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 75%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -78,7 +78,7 @@ for($i=0; $i<$longitud; $i++) {
 		//	alert (xlat);
         var map = new google.maps.Map(document.getElementById('map'), {
           center: new google.maps.LatLng(-34.5739088, -58.4429909),
-          zoom: 14
+          zoom: 13
         });
 		infoWindow = new google.maps.InfoWindow;
 		
