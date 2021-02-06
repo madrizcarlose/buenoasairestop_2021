@@ -1,6 +1,6 @@
 <?php
 //$var_sql = $_POST['var_sql'];
-$categoria = $_GET['categoria'];
+$categoria = $_POST['categoria'];
 //$categoria  = "c003";
 $lat = -34.5737177;
 $lon = -58.4354472;
@@ -10,7 +10,7 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
 ?>
 <?php 
 //print("sql: ");
-// print($var_sql) ?>
+print($var_sql) ?>
 <!DOCTYPE html >
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
