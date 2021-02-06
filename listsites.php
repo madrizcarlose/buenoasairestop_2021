@@ -1,7 +1,7 @@
 ﻿<?php 
 
 $categoria = $_GET['categoria'];
-$_SESSION["categoria"] = $categoria;
+
 //$str_sql="SELECT N.nomb_negocio,N.codi_negocio , N.desc_negocio ,N.valoracion ,N.telef_negocio ,N.imagen_negocio ,N.direccion_negocio,N.coord_negocio, N.coord2, N.webpage FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoria. "' AND Activo=1;";
 
 //$str_sql="SELECT N.* FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoria. "' AND Activo=1;";
@@ -91,6 +91,7 @@ $products = json_decode($data,true);
 <!-- FIN DEL ENCABEZADO -->
 
 <br>
+<p><a href="https://www.google.com/">Google</a></p>
 <div class="custom-container container" >
 <div class="template">
 <div class="container-fluid" style="background-color:#fafafa;">
@@ -99,6 +100,9 @@ $products = json_decode($data,true);
 					<form target="POPUPW" action="maps/map2a.php" method="post" 
 				onsubmit="POPUPW = window.open('about:blank','POPUPW',
    'width=600,height=400');">
+   <input type="hidden" name="var_sql" value="<?php print($categoria); ?>" />
+				
+					<input type="submit" value="Ver mapa" />
 					</form>
 				<br>	
 <?php

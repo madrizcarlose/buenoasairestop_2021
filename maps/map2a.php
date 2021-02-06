@@ -1,7 +1,7 @@
 <?php
 //$var_sql = $_POST['var_sql'];
-//$categoria = $_GET['categoria'];
-$categoria  = "c003";
+$categoria = $_GET['categoria'];
+//$categoria  = "c003";
 $lat = -34.5737177;
 $lon = -58.4354472;
 
