@@ -89,17 +89,19 @@ $products = json_decode($data,true);
 	</div> <!--template-->
 </div> <!--container-->
 <!-- FIN DEL ENCABEZADO -->
-
+<br>
 <div class="custom-container container">
 	<div class="template">
 		<div class="row" align="right">
+    <div class="col-sm-12 col-md-12 col-lg-12" align="right">
 <form target="POPUPW" action="maps/map2a.php" method="post" 
 				onsubmit="POPUPW = window.open('about:blank','POPUPW',
    'width=600,height=400');">
    <input type="hidden" name="categoria" value="<?php print($categoria); ?>" />
 				
 					<input type="submit" value="Ver mapa" />
-					</form>
+          </form>
+          </div>
           </div> <!--row-->
 	</div> <!--template-->
 </div> <!--container-->
