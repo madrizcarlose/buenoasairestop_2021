@@ -36,7 +36,15 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
 
 <html>
   <body>
+  <div class="custom-container container" >
+<div class="template">
+<div class="container-fluid" style="background-color:#fafafa;">
+	
+<div class="row gutter-30" >
+  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8"  >	
     <div id="map"></div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  >	
 <div id="list">
   <?php
 
@@ -50,15 +58,16 @@ $longitud = count($products);
 for($i=0; $i<$longitud; $i++) {
   
   $row = $products[$i];
-  print $i;
+  print $i+1;
   print "&nbsp;";
   print $row['nomb_negocio'];
   print "<hr>";
 }
 
   ?>
-
+ </div>
     </div>
+    </div></div></div></div>
     <script>
 	
 	
