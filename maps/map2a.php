@@ -35,8 +35,8 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
-        margin: 10;
-        padding: 10;
+        margin: 40;
+        padding: 40;
       }
     </style>
 	
