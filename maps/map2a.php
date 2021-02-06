@@ -37,7 +37,25 @@ print($var_sql) ?>
 <html>
   <body>
     <div id="map"></div>
+<div id="list">
+  <?php
 
+$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
+$data = file_get_contents($url);
+$products = json_decode($data,true);
+$longitud = count($products);
+
+//while($row = $products->fetch_assoc()) {
+  //foreach ($products as $row) {
+for($i=0; $i<$longitud; $i++) {
+  
+  $row = $products[$i];
+  print $row['nomb_negocio'];
+}
+
+  ?>
+
+    </div>
     <script>
 	
 	
