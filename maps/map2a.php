@@ -78,7 +78,7 @@ for($i=0; $i<$longitud; $i++) {
 		//	alert (xlat);
         var map = new google.maps.Map(document.getElementById('map'), {
           center: new google.maps.LatLng(-34.5739088, -58.4429909),
-          zoom: 12
+          zoom: 14
         });
 		infoWindow = new google.maps.InfoWindow;
 		
