@@ -91,7 +91,7 @@ $products = json_decode($data,true);
 <!-- FIN DEL ENCABEZADO -->
 
 <br>
-<p><a href="https://www.google.com/">Google</a></p>
+
 <div class="custom-container container" >
 <div class="template">
 <div class="container-fluid" style="background-color:#fafafa;">
@@ -100,7 +100,7 @@ $products = json_decode($data,true);
 					<form target="POPUPW" action="maps/map2a.php" method="post" 
 				onsubmit="POPUPW = window.open('about:blank','POPUPW',
    'width=600,height=400');">
-   <input type="hidden" name="var_sql" value="<?php print($categoria); ?>" />
+   <input type="input" name="categoria" value="<?php print($categoria); ?>" />
 				
 					<input type="submit" value="Ver mapa" />
 					</form>
