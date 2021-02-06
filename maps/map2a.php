@@ -29,13 +29,14 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 80%;
+        width: 80%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
-        margin: 0;
-        padding: 0;
+        margin: 10;
+        padding: 10;
       }
     </style>
 	
@@ -63,8 +64,10 @@ for($i=0; $i<$longitud; $i++) {
   $row = $products[$i];
   print "&nbsp;";
   print $i+1;
-  print "&nbsp;&nbsp;";
+  print "&nbsp;&nbsp;<strong>";
   print $row['nomb_negocio'];
+  print "</strong></p>";
+  print $row['direccion_negocio']
   print "<hr>";
 }
 
