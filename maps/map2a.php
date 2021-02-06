@@ -30,7 +30,7 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
        * element that contains the map. */
       #map {
         height: 80%;
-        width: 80%;
+        width: 100%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -66,7 +66,7 @@ for($i=0; $i<$longitud; $i++) {
   print $i+1;
   print "&nbsp;&nbsp;<strong>";
   print $row['nomb_negocio'];
-  print "</strong></p>";
+  print "</strong></p>&nbsp;&nbsp;";
   print $row['direccion_negocio'];
   print "<hr>";
 }
