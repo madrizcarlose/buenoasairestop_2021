@@ -60,7 +60,7 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
   sss
 
   <div id="map" class="col-xs-12 col-sm-12 col-md-10 col-lg-10" ></div>
-<div id="list">
+<div id="list" class="col-xs-12 col-sm-12 col-md-2 col-lg-2" >
   <?php
  
 $url = "https://serviciomadriz.online/buenosairestop/get_sites.php?categoria=" . $_POST['categoria'];
