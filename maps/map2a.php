@@ -49,8 +49,8 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
   <div class="template">
   <div class="container-fluid" style="background-color:#fafafa;">
 	<div class="row gutter-30" >
-        <div  class="col-xs-12 col-sm-12 col-md-10 col-lg-10"  >	
-        <div id="map"></div>
+        <div id="map" class="col-xs-12 col-sm-12 col-md-10 col-lg-10"  >	
+            <div id="map" ></div>
           </div>
         <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"  >	
          ffff
