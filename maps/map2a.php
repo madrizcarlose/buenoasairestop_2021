@@ -100,7 +100,8 @@ var icons = {
 
           // Change this depending on the name of your PHP or XML file
 		    // downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
-			downloadUrl("map2c.php?var_sql=<?php print($var_sql); ?>", function(data) {
+			//downloadUrl("map2c.php?var_sql=<?php print($var_sql); ?>", function(data) {
+        downloadUrl("map2c.php?var_sql", function(data) {
 			var xml = data.responseXML;
 			//alert(xml);
             var markers = xml.documentElement.getElementsByTagName('marker');
@@ -187,7 +188,7 @@ var icons = {
       function doNothing() {}
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnvmVQz8wC8WLHKhgzXeLGy_VZrvOi6CU&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG-R6WTvqjWqLb-01oG4LV7HV_az9Ajhw&callback=initMap">
     </script>
 	
 	
