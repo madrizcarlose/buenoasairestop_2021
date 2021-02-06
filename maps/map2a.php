@@ -15,7 +15,16 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>Using MySQL and PHP with Google Maps</title>
+    <title>Buenos Aires Top</title>
+
+    <!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Bootstrap --> 
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -36,7 +45,19 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radian
 
 <html>
   <body>
-  
+  <div class="custom-container container" >
+  <div class="template">
+  <div class="container-fluid" style="background-color:#fafafa;">
+	<div class="row gutter-30" >
+        <div  class="col-xs-12 col-sm-12 col-md-8 col-lg-8"  >	
+          ddd
+          </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  >	
+         ffff
+        </div>
+  </div></div></div></div>
+
+  sss
 
 <div id="map"></div>
 <div id="list">
