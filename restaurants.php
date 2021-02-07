@@ -107,7 +107,7 @@
 <form id="formulario" name="formulario">
   
    <input type="text" name="latt" id="latt"/>
-   <input type="text" name="latt" id="latt"/>
+   <input type="text" name="lont" id="lont"/>
 				
           </form>
 </body>
