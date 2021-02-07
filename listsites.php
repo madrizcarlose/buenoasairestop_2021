@@ -16,14 +16,15 @@ print ($lont);
 
 //$lat  = $_SESSION["lat"];
 //$lon  = $_SESSION["lon"];
-$lat = -34.5737177;
-$lon = -58.4354472;
-
+$lat = $latt;
+$lon = $lont;
+$parametros = "categoria=" . $_GET['categoria'] . "&lat=".$lat . "&lon=".$lon;
 
 //--------------------------------------
 
 //$url = "http://localhost/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
-$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
+$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?" . $parametros;
+// $_GET['categoria'];
 $data = file_get_contents($url);
 $products = json_decode($data,true);
 ?>
