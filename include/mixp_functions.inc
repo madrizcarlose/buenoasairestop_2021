@@ -5,7 +5,7 @@ function openPage(name_page) {
 	mixpanel.track(
 		"Open Option Menu",
 		{"Opcion Menu":name_page});
-	window.open(name_page,"_self");
+	window.open(name_page+'?lat=' + document.getElementById('latt').value,"_self");
 }
 
 function showList(categorie) {

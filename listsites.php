@@ -1,6 +1,8 @@
 ﻿<?php 
 
 $categoria = $_GET['categoria'];
+$latt = $_GET['lat'];
+print ($latt);
 
 //$str_sql="SELECT N.nomb_negocio,N.codi_negocio , N.desc_negocio ,N.valoracion ,N.telef_negocio ,N.imagen_negocio ,N.direccion_negocio,N.coord_negocio, N.coord2, N.webpage FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoria. "' AND Activo=1;";
 
