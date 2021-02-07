@@ -189,7 +189,7 @@ $('#myModal').on('shown.bs.modal', function () {
 })
 </script>
 <!-- /GetButton.io widget -->
-  
+<div class='onesignal-customlink-container'></div>
 <br><br><br><br><br><br><br><br>
 <!--pie de pagina-->
 <?php 
