@@ -13,6 +13,8 @@
  	--> 
 	<link rel="stylesheet" href="include/styles.css">
 	<title>Buenos Aires TP - Las mejores opciones donde ir a comer</title>
+
+
 </head>
 
 <body bgcolor="#afafaf">
@@ -102,6 +104,24 @@
  
 <!--pie de pagina-->
 <?php include 'include/footer.inc';?>
-
+<form id="formulario" name="formulario">
+  
+   <input type="text" name="latt" id="latt"/>
+   <input type="text" name="lont" id="latt"/>
+				
+          </form>
 </body>
+<script>
+if (navigator.geolocation){ //check geolocation available 
+    //try to get user current location using getCurrentPosition() method
+    navigator.geolocation.getCurrentPosition(function(position){ 
+            console.log("Found your location nLat : "+position.coords.latitude+" nLang :"+ position.coords.longitude);
+			document.formulario.latt.value = position.coords.latitude;
+			document.formulario.lont.value = position.coords.longitude;
+        });
+}else{
+    console.log("Browser doesn't support geolocation!");
+    document.formulario.latt.value = "mmmm";
+}
+  </script>
 </html>
