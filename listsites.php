@@ -18,6 +18,11 @@ print ($lont);
 //$lon  = $_SESSION["lon"];
 $lat = $latt;
 $lon = $lont;
+
+if (empty($lat) or round($lat)!= -34  ) {
+  $lat = -34.6037389;
+}
+	
 $parametros = "categoria=" . $_GET['categoria'] . "&lat=".$lat . "&lon=".$lon;
 
 //--------------------------------------
@@ -96,6 +101,9 @@ $products = json_decode($data,true);
 				onsubmit="POPUPW = window.open('about:blank','POPUPW',
    'width=1200,height=800');">
    <input type="hidden" name="categoria" value="<?php print($categoria); ?>" />
+   <input type="text" name="lat" value="<?php print($lat); ?>" />
+   <input type="text" name="lon" value="<?php print($lon); ?>" />
+   
    
 					<input type="submit" value="Ver mapa" />
           </form>
