@@ -22,7 +22,7 @@ $lon = $lont;
 if (empty($lat) or (round($lat)!= -34 and round($lat)!= -35)) {
   $lat = -34.6037389;
 }
-if (empty($lon) or (round($lon)!= -58) {
+if (empty($lon) or (round($lon)!= -58)) {
   $lon = -58.3815704;
 }
 	
