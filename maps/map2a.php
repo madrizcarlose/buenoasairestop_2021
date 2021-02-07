@@ -3,11 +3,13 @@
 $categoria = $_POST['categoria'];
 $lat = $_POST['lat'];
 $lon = $_POST['lon'];
+$latf = (float)$lat;
+$lonf = (float)$lon;
 //$categoria  = "c003";
 //$lat = -34.5737177;
 //$lon = -58.4354472;
 
-$var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radians( N.lat ) ) * cos( radians( N.lon ) - radians('$lon') ) + sin( radians('$lat') ) * sin( radians( N.lat ) ) ) )*1.60934),1)  AS distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoria. "' AND Activo=1 Order By Distance ASC;";
+$var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$latf') ) * cos( radians( N.lat ) ) * cos( radians( N.lon ) - radians('$lonf') ) + sin( radians('$latf') ) * sin( radians( N.lat ) ) ) )*1.60934),1)  AS distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoria. "' AND Activo=1 Order By Distance ASC;";
 
 ?>
 <?php 
