@@ -11,8 +11,11 @@ function openPage(name_page) {
 function showList(categorie) {
 var root_page = "listsites.php?categoria=";
 var name_page = root_page.concat (categorie);
-name_page = name_page.concat (",lat=");
+name_page = name_page.concat ("&lat=");
 name_page = name_page.concat(document.formulario.latt.value);
+name_page = name_page.concat ("&lon=");
+name_page = name_page.concat(document.formulario.lont.value);
+
 
 alert(name_page);
 	mixpanel.track(
