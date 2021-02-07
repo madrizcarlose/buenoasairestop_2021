@@ -144,7 +144,7 @@ var icons = {
           // Change this depending on the name of your PHP or XML file
 		    // downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
 			//downloadUrl("map2c.php?var_sql=<?php print($var_sql); ?>", function(data) {
-        downloadUrl("map2c.php?categoria=<?php print($categoria); ?>", function(data) {
+        downloadUrl("map2c.php?<?php print($parametros); ?>", function(data) {
 			var xml = data.responseXML;
 			//alert(xml);
             var markers = xml.documentElement.getElementsByTagName('marker');
