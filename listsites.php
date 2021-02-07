@@ -53,13 +53,29 @@ $products = json_decode($data,true);
     }
   </script>
   <script>
+     alert("aaaaaaaaaaa");
+     console.log("zzzzz");
+if (navigator.geolocation){ //check geolocation available 
+    //try to get user current location using getCurrentPosition() method
+    navigator.geolocation.getCurrentPosition(function(position){ 
+            console.log("Found your location nLat : "+position.coords.latitude+" nLang :"+ position.coords.longitude);
+            alert(position.coords.latitude);
+          });
+}else{
+    console.log("Browser doesn't support geolocation!");
+}
+
+
+
     var xlat = document.getElementById("xlat");
     if (navigator.geolocation) {
-	      // alert("xxx22");
+	      alert("position.coords.latitude");
         navigator.geolocation.getCurrentPosition(showPosition);
-	      //alert("xxx999");
+
+        var xx = navigator.geolocation.getCurrentPosition(showPosition);
+	      alert(xlat);
     } else { 
-        //alert("xxx3334");
+        alert("xxx3334");
         xlat.innerHTML = "Geolocation is not supported by this browser.";
       }
 
