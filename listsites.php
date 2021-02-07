@@ -19,7 +19,7 @@ print ($lont);
 $lat = $latt;
 $lon = $lont;
 
-if (empty($lat) or round($lat)!= -34  ) {
+if (empty($lat) or (round($lat)!= -34 and round($lat)!= -35)) {
   $lat = -34.6037389;
 }
 	
