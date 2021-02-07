@@ -96,7 +96,7 @@ $products = json_decode($data,true);
     <div class="col-sm-12 col-md-12 col-lg-12" align="right">
 <form target="POPUPW" action="maps/map2a.php" method="post" 
 				onsubmit="POPUPW = window.open('about:blank','POPUPW',
-   'width=600,height=400');">
+   'width=1200,height=800');">
    <input type="hidden" name="categoria" value="<?php print($categoria); ?>" />
 				
 					<input type="submit" value="Ver mapa" />

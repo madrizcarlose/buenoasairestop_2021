@@ -59,6 +59,7 @@ $longitud = count($products);
 
 //while($row = $products->fetch_assoc()) {
   //foreach ($products as $row) {
+  print "<hr>";
 for($i=0; $i<$longitud; $i++) {
   
   $row = $products[$i];
@@ -156,9 +157,7 @@ var icons = {
               var strong = document.createElement('strong');
               strong.textContent = name
               infowincontent.appendChild(strong);
-              infowincontent.appendChild(document.createElement('br'));
-			  
-			 
+              infowincontent.appendChild(document.createElement('br'));	 
 
               var text = document.createElement('text');
               text.textContent = address
