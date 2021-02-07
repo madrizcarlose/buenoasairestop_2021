@@ -54,12 +54,14 @@ $products = json_decode($data,true);
   </script>
   <script>
      alert("aaaaaaaaaaa");
-     console.log("zzzzz");
+    
 if (navigator.geolocation){ //check geolocation available 
     //try to get user current location using getCurrentPosition() method
     navigator.geolocation.getCurrentPosition(function(position){ 
             console.log("Found your location nLat : "+position.coords.latitude+" nLang :"+ position.coords.longitude);
             alert(position.coords.latitude);
+            alert(position.coords.longitude);
+            console.log(position.coords.longitude);
           });
 }else{
     console.log("Browser doesn't support geolocation!");
