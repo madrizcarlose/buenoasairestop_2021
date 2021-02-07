@@ -103,6 +103,10 @@ $products = json_decode($data,true);
    <input type="hidden" name="categoria" value="<?php print($categoria); ?>" />
    <input type="text" name="lat" value="<?php print($lat); ?>" />
    <input type="text" name="lon" value="<?php print($lon); ?>" />
+   <input type="text" name="latround" value="<?php print( round($lat)); ?>" />
+
+
+  
    
    
 					<input type="submit" value="Ver mapa" />
