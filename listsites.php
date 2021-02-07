@@ -53,20 +53,9 @@ $products = json_decode($data,true);
     }
   </script>
   <script>
-     alert("aaaaaaaaaaa");
-    
-if (navigator.geolocation){ //check geolocation available 
-    //try to get user current location using getCurrentPosition() method
-    navigator.geolocation.getCurrentPosition(function(position){ 
-            console.log("Found your location nLat : "+position.coords.latitude+" nLang :"+ position.coords.longitude);
-            alert("bbb");
-            alert(position.coords.latitude);
-            alert(position.coords.longitude);
-            console.log(position.coords.longitude);
-          });
-}else{
-    console.log("Browser doesn't support geolocation!");
-}
+     
+     
+
 
 
 
@@ -78,9 +67,10 @@ if (navigator.geolocation){ //check geolocation available
         var xx = navigator.geolocation.getCurrentPosition(showPosition);
 	      alert(xlat);
     } else { 
-        alert("xxx3334");
+       
         xlat.innerHTML = "Geolocation is not supported by this browser.";
       }
+
 
     function showPosition(position) {
         x.innerHTML = "Latitude: " + position.coords.latitude + 
@@ -113,10 +103,11 @@ if (navigator.geolocation){ //check geolocation available
 	<div class="template">
 		<div class="row" align="right">
     <div class="col-sm-12 col-md-12 col-lg-12" align="right">
-<form target="POPUPW" action="maps/map2a.php" method="post" 
+<form id="formulario" name="formulario" target="POPUPW" action="maps/map2a.php" method="post" 
 				onsubmit="POPUPW = window.open('about:blank','POPUPW',
    'width=1200,height=800');">
    <input type="hidden" name="categoria" value="<?php print($categoria); ?>" />
+   <input type="text" name="latt" id="latt" />
 				
 					<input type="submit" value="Ver mapa" />
           </form>
@@ -217,4 +208,24 @@ include 'include/footer.inc';
 ?> 
 
 </body>
+<script>
+  document.formulario.latt.value = "fffff";
+  alert("pase 1");
+  document.formulario.latt.value = "hhhh";
+    
+if (navigator.geolocation){ //check geolocation available 
+    //try to get user current location using getCurrentPosition() method
+    navigator.geolocation.getCurrentPosition(function(position){ 
+            console.log("Found your location nLat : "+position.coords.latitude+" nLang :"+ position.coords.longitude);
+            alert("bbb");
+            document.formulario.latt.value = position.coords.latitude;
+            alert(position.coords.latitude);
+            alert(position.coords.longitude);
+            console.log(position.coords.longitude);
+          });
+}else{
+    console.log("Browser doesn't support geolocation!");
+    document.formulario.latt.value = "mmmm";
+}
+  </script>
 </html>
