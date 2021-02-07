@@ -59,6 +59,7 @@ if (navigator.geolocation){ //check geolocation available
     //try to get user current location using getCurrentPosition() method
     navigator.geolocation.getCurrentPosition(function(position){ 
             console.log("Found your location nLat : "+position.coords.latitude+" nLang :"+ position.coords.longitude);
+            alert("bbb");
             alert(position.coords.latitude);
             alert(position.coords.longitude);
             console.log(position.coords.longitude);
@@ -71,7 +72,7 @@ if (navigator.geolocation){ //check geolocation available
 
     var xlat = document.getElementById("xlat");
     if (navigator.geolocation) {
-	      alert("position.coords.latitude");
+	     
         navigator.geolocation.getCurrentPosition(showPosition);
 
         var xx = navigator.geolocation.getCurrentPosition(showPosition);
