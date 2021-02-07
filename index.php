@@ -229,5 +229,27 @@ include 'include/footer.inc';
   </div> 
 </div>
 <!-- FIN DE DIV PARA MOSTRAR POOPUP INFO DE PORQUE LOGUEARME -->
+
+<form id="formulario" name="formulario">
+  
+   <input type="text" name="latt" id="latt"/>
+   <input type="text" name="lont" id="lont"/>
+				
+          </form>
+
 </body>
+<script>
+if (navigator.geolocation){ //check geolocation available 
+    //try to get user current location using getCurrentPosition() method
+    navigator.geolocation.getCurrentPosition(function(position){ 
+            console.log("Found your location nLat : "+position.coords.latitude+" nLang :"+ position.coords.longitude);
+			document.formulario.latt.value = position.coords.latitude;
+			document.formulario.lont.value = position.coords.longitude;
+        });
+}else{
+    console.log("Browser doesn't support geolocation!");
+	document.formulario.latt.value = "-34.6037389";
+	document.formulario.lont.value = "-58.3815704";
+}
+  </script>
 </html>
