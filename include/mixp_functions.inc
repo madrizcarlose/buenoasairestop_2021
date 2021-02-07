@@ -12,7 +12,8 @@ function showList(categorie) {
 var root_page = "listsites.php?categoria=";
 var name_page = root_page.concat (categorie);
 name_page = name_page.concat (",lat=");
-name_page = name_page.document.getElementById('latt').value;
+name_page = name_page.concat(document.formulario.latt.value);
+
 alert(name_page);
 	mixpanel.track(
 		"Open Show List",
