@@ -6,12 +6,14 @@ $username = "u887045922_vamosba";
 $password = "Carlosyana_99";
 $database = "u887045922_vamosba";
 $server = "185.201.11.107";
-$lat = -34.5737177;
-$lon = -58.4354472;
+//$lat = -34.5737177;
+//$lon = -58.4354472;
 //session_start();
 //$var_sql3 = $_SESSION["s_sql"];
 //$categoriaID = $_SESSION["categoria"];
 $categoria = $_GET['categoria'];
+$lat = $_GET['lat'];
+$lon = $_GET['lon'];
 //$categoria = 'c003';
  $var_sql3 = "SELECT N.*, Round((( 3959 * acos( cos( radians('$lat') ) * cos( radians( N.lat ) ) * cos( radians( N.lon ) - radians('$lon') ) + sin( radians('$lat') ) * sin( radians( N.lat ) ) ) )*1.60934),1)  AS distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoria. "' AND Activo=1 Order By Distance ASC;";
 

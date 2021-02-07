@@ -2,7 +2,9 @@
 //$categoria = "c003";
 $categoria = $_GET['categoria'];
 $lat = $_GET['lat'];
-$lat = $_GET['lon'];
+$lon = $_GET['lon'];
+
+//$latf = (float)$lat;
 //$lat = -34.5737177;
 //$lon = -58.4354472;
 

@@ -42,6 +42,7 @@ $products = json_decode($data,true);
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/app/utils/ico.png">
   <style type="text/css">
     .container.custom-container {
       padding: 0 20px;
