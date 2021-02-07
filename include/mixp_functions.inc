@@ -5,13 +5,15 @@ function openPage(name_page) {
 	mixpanel.track(
 		"Open Option Menu",
 		{"Opcion Menu":name_page});
-	window.open(name_page+'?lat=' + document.getElementById('latt').value,"_self");
+	window.open(name_page,"_self");
 }
 
 function showList(categorie) {
 var root_page = "listsites.php?categoria=";
 var name_page = root_page.concat (categorie);
-//alert(name_page);
+name_page = name_page.concat (",lat=");
+name_page = name_page.document.getElementById('latt').value;
+alert(name_page);
 	mixpanel.track(
 		"Open Show List",
 		{"Opcion List":categorie});
