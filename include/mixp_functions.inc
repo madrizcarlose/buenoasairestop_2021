@@ -17,7 +17,7 @@ name_page = name_page.concat ("&lon=");
 name_page = name_page.concat(document.formulario.lont.value);
 
 
-alert(name_page);
+//alert(name_page);
 	mixpanel.track(
 		"Open Show List",
 		{"Opcion List":categorie});
