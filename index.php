@@ -91,7 +91,9 @@ else{
 	// Enter your Client Secrect
 	$client->setClientSecret('0KSoCti3JgsmtmNq6VbSyr5g');
 	// Enter the Redirect URL
-	$client->setRedirectUri('https://serviciomadriz.online/buenosairestop/login.php');
+	//$client->setRedirectUri('https://serviciomadriz.online/buenosairestop/login.php');
+	$client->setRedirectUri('https://topbuenosaires.online/login.php');
+	
 	
 	// Adding those scopes which we want to get (email & profile Information)
 	$client->addScope("email");
