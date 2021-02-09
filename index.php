@@ -1,6 +1,6 @@
 <?php
 require 'include/db_connection.php';
-//version enero2
+//version enero3
 // if(!isset($_SESSION['login_id'])){
  //   header('Location: login.php');
  //   exit;
