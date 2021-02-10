@@ -34,8 +34,7 @@ $parametros = "categoria=" . $_GET['categoria'] . "&lat=".$lat . "&lon=".$lon;
 //$url = "http://localhost/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
 //$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?" . $parametros;
 $url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
-print $url;
-print $lat;
+
 // $_GET['categoria'];
 $data = file_get_contents($url);
 $products = json_decode($data,true);
@@ -86,7 +85,7 @@ $products = json_decode($data,true);
 <?php print $url;
 print $lat;
 ?>
-hjghjghj
+
 <br>
 <!-- ENCABEZADO-->
 <div class="custom-container container">
@@ -98,7 +97,7 @@ hjghjghj
 			</div>
 			<div class="col-sm-8 col-md-8 col-lg-8" valign="center" align="center"> 
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
-				<h1 align="left">Guia - Mejores sitios4rtttt44</h1>
+				<h1 align="left">Guia - Mejores sitios</h1>
 			</div>
 		</div> <!--row-->
 	</div> <!--template-->
