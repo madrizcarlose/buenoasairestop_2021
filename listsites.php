@@ -83,6 +83,9 @@ $products = json_decode($data,true);
 </head>
 
 <body>
+<?php print $url;
+print $lat;
+?>
 <br>
 <!-- ENCABEZADO-->
 <div class="custom-container container">
