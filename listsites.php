@@ -98,7 +98,7 @@ hjghjghj
 			</div>
 			<div class="col-sm-8 col-md-8 col-lg-8" valign="center" align="center"> 
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
-				<h1 align="left">Guia - Mejores sitios444</h1>
+				<h1 align="left">Guia - Mejores sitios4rtttt44</h1>
 			</div>
 		</div> <!--row-->
 	</div> <!--template-->
