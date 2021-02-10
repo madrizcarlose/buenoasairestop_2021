@@ -32,7 +32,8 @@ $parametros = "categoria=" . $_GET['categoria'] . "&lat=".$lat . "&lon=".$lon;
 //--------------------------------------
 
 //$url = "http://localhost/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
-$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?" . $parametros;
+//$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?" . $parametros;
+$url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
 // $_GET['categoria'];
 $data = file_get_contents($url);
 $products = json_decode($data,true);
