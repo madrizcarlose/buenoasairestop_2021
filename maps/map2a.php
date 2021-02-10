@@ -152,8 +152,8 @@ var icons = {
             Array.prototype.forEach.call(markers, function(markerElem) {
 			  cont = cont +1;
               var id = markerElem.getAttribute('id');
-              var name = markerElem.getAttribute('lat');
-              var address = markerElem.getAttribute('lng');
+              var name = markerElem.getAttribute('name');
+              var address = markerElem.getAttribute('address');
               var type = markerElem.getAttribute('type');
               var point = new google.maps.LatLng(
                   parseFloat(markerElem.getAttribute('lat')),
