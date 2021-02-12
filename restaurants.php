@@ -29,9 +29,7 @@
 		</div>
 		<div class="col-sm-8 col-md-8 col-lg-8" align="left"> 
 			<p class="h2"  align="left">Restaurantes en Buenos Aires</p> 
-			<script type="text/javascript" src="https://colppy.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/o2joag/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=es-ES&collectorId=d8e0e732"></script>
-
-
+	
 		</div>
 	</div>
 </div> <!-- template-->
@@ -112,7 +110,6 @@
    <input type="text" name="latt" id="latt"/>
    <input type="text" name="lont" id="lont"/>
    <script type="text/javascript" src="https://colppy.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/o2joag/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=es-ES&collectorId=d8e0e732"></script>
-
 	
           </form>
 
