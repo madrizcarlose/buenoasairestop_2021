@@ -149,8 +149,8 @@ var icons = {
 			//alert(xml);
             var markers = xml.documentElement.getElementsByTagName('marker');
 			var cont = 0;
-            Array.prototype.forEach.call(markers, function(markerElem) {
-			  cont = cont +1;
+        Array.prototype.forEach.call(markers, function(markerElem) {
+			      cont = cont +1;
               var id = markerElem.getAttribute('id');
               var name = markerElem.getAttribute('name');
               var address = markerElem.getAttribute('address');
@@ -169,18 +169,18 @@ var icons = {
               text.textContent = address
               infowincontent.appendChild(text);
               var icon = customLabel[type] || {};
-			  var icon = cont;
+			        var icon = cont;
               var marker = new google.maps.Marker({
                 map: map,
                 position: point,
-				 //icon: icons['parking'].icon,
+				        //icon: icons['parking'].icon,
                 //label: icon.label
-				label: String(icon)
-              });
+				        label: String(icon)
+                });
               marker.addListener('click', function() {
                 infoWindow.setContent(infowincontent);
                 infoWindow.open(map, marker);
-              });
+                });
             });
           });
         }

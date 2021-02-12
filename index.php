@@ -240,6 +240,9 @@ include 'include/footer.inc';
 				
           </form>
 
+		  <script type="text/javascript" src="https://colppy.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/o2joag/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=es-ES&collectorId=d8e0e732"></script>
+
+
 </body>
 <script>
 if (navigator.geolocation){ //check geolocation available 
