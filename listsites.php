@@ -198,7 +198,7 @@ for($i=0; $i<$longitud; $i++) {
     //defining Product id
     if ($row['valoracion']>0){
 
-      $rate_bg = round($row['valoracion']/5*100
+      $rate_bg = round(($row['valoracion']/5,2))*100;
       ?>
       <div style="margin-top: 10px">
       <div class="result-container">
