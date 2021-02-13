@@ -236,10 +236,10 @@ for($i=0; $i<$longitud; $i++) {
           <div style="width: 50%; float:right;" align="right">
             <?php 
               $coord = $row['coord2'];
-              $tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
-              echo ("<br>");
-              echo $tira;
-              $tira2= "<a href=".$row['url'] . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver url</a>";
+             // $tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
+              //echo ("<br>");
+              //echo $tira;
+              $tira2= "<a href=".$row['url'] . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
               echo $tira2;
      
             ?>
