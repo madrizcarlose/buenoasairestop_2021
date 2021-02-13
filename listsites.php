@@ -75,7 +75,7 @@ $products = json_decode($data,true);
     /* Rate Star Ends*/
     
     /* Display rate count */    
-    .reviewCount, .reviewScore {font-size: 14px; color: #666666; margin-left: 5px;}
+    .reviewCount, .reviewScore {font-size: 12px; color: #666666; margin-left: 5px;}
     .reviewScore {font-weight: 600;}
     /* Display rate count Ends*/        
     </style>
@@ -205,7 +205,7 @@ for($i=0; $i<$longitud; $i++) {
       <div class="rate-bg" style="width:<?php echo $rate_bg; ?>%"></div>
       <div class="rate-stars"></div>
   </div>                    
-  <span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>
+  <span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>  <span style="color:black; text-algin:center;display-block:inline;"><span class="reviewCount">(<?php echo $row['user_ratings_total']; ?> reviews)</span></span>
     
    <?php } ?>
                        

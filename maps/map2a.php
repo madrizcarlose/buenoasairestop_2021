@@ -48,7 +48,7 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$latf') ) * cos( radia
     /* Rate Star Ends*/
     
     /* Display rate count */    
-    .reviewCount, .reviewScore {font-size: 14px; color: #666666; margin-left: 5px;}
+    .reviewCount, .reviewScore {font-size: 12px; color: #666666; margin-left: 5px;}
     .reviewScore {font-weight: 600;}
     /* Display rate count Ends*/        
     </style>
@@ -122,7 +122,7 @@ if ($row['valoracion']>0){
   <div class="rate-bg" style="width:<?php echo $rate_bg; ?>%"></div>
   <div class="rate-stars"></div>
 </div>                    
-<span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>
+<span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span> <span class="reviewCount">(<?php echo $row['user_ratings_total']; ?> reviews)</span>
 
 <?php }        
 print "<hr>";
