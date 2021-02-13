@@ -19,7 +19,39 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$latf') ) * cos( radia
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+
+
     <title>Buenos Aires Top</title>
+
+    <style type="text/css">        
+    /* Rate Star*/        
+    .result-container{
+        width: 120px; height: 22px;
+        background-color: #ccc;
+        vertical-align:middle;
+        display:inline-block;
+        position: relative;
+        top: -4px;
+    }
+    .rate-stars{
+        width: 120px; height: 22px;
+        background: url(../images/app/stars/stars_tiny.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+    }
+    .rate-bg{
+        height: 22px;
+        background-color: #ffbe10;
+        position: absolute;
+    }
+    /* Rate Star Ends*/
+    
+    /* Display rate count */    
+    .reviewCount, .reviewScore {font-size: 14px; color: #666666; margin-left: 5px;}
+    .reviewScore {font-weight: 600;}
+    /* Display rate count Ends*/        
+    </style>
 
     <!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -69,16 +101,33 @@ $longitud = count($products);
 for($i=0; $i<$longitud; $i++) {
   
   $row = $products[$i];
-  print "&nbsp;";
+  print "&nbsp;<h3>";
   print $i+1;
   print "&nbsp;&nbsp;<strong>";
   print $row['nomb_negocio'];
-  print "</strong></p>&nbsp;&nbsp;";
+  print "</strong></h3></p>&nbsp;&nbsp;";
   print $row['direccion_negocio'];
-  print "<hr>";
-}
+  
 
+  //defining Product id
+if ($row['valoracion']>0){
+
+  $rate_bg = round(($row['valoracion']/5),2)*100;
   ?>
+  <div style="margin-top: 10px">
+  <div class="result-container">
+  <div class="rate-bg" style="width:<?php echo $rate_bg; ?>%"></div>
+  <div class="rate-stars"></div>
+</div>                    
+<span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>
+
+<?php }        
+print "<hr>";
+ 
+}
+?>
+
+
  </div>
    
     <script>

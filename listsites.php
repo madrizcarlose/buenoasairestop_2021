@@ -196,9 +196,9 @@ for($i=0; $i<$longitud; $i++) {
         </div>
         <?php
     //defining Product id
-    if ($row['valoracion']>0){
+  if ($row['valoracion']>0){
 
-      $rate_bg = round(($row['valoracion']/5,2))*100;
+      $rate_bg = round(($row['valoracion']/5),2)*100;
       ?>
       <div style="margin-top: 10px">
       <div class="result-container">
@@ -207,7 +207,7 @@ for($i=0; $i<$longitud; $i++) {
   </div>                    
   <span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>
     
-    }
+   <?php } ?>
                        
     
     </h5>
