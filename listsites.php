@@ -196,19 +196,21 @@ for($i=0; $i<$longitud; $i++) {
         </div>
         <?php
     //defining Product id
+    if ($row['valoracion']>0){
+
+      $rate_bg = round($row['valoracion']/5*100
+      ?>
+      <div style="margin-top: 10px">
+      <div class="result-container">
+      <div class="rate-bg" style="width:<?php echo $rate_bg; ?>%"></div>
+      <div class="rate-stars"></div>
+  </div>                    
+  <span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>
     
-                $rate_times = 12;
-                $rate_value = 5;
-                $rate_bg = 66;
-           
-    ?>
-        <div style="margin-top: 10px">
-                <div class="result-container">
-                <div class="rate-bg" style="width:<?php echo $rate_bg; ?>%"></div>
-                <div class="rate-stars"></div>
-            </div>                    
-            <span class="reviewScore"><?php echo substr($rate_value,0,3); ?></span><span class="reviewCount">(<?php echo $rate_times; ?> reviews)</span>
-        </h5>
+    }
+                       
+    
+    </h5>
        <p>
 		    <span class="glyphicon glyphicon-earphone"></span>
 		    <span style="color:black; text-algin:center;display-block:inline;">
@@ -235,7 +237,11 @@ for($i=0; $i<$longitud; $i++) {
             <?php 
               $coord = $row['coord2'];
               $tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
+              echo ("<br>");
               echo $tira;
+              $tira2= "<a href=".$row['url'] . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver url</a>";
+              echo $tira2;
+     
             ?>
             <font face="helvetica"><small><?php print $row['distance']; ?>&nbsp;km</font></small>
           </div>
