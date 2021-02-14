@@ -4,7 +4,7 @@
 	<?php include 'include/head.inc';?>
 	<?php include 'include/mixpanel.inc';?>
 	<?php include 'include/mixp_functions.inc';?>
-	<?php include 'include/onsesignal.inc';?>
+	<?php include 'include/onesignal.inc';?>
 
 	<!-- 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,6 +19,11 @@
 </head>
 
 <body bgcolor="#afafaf">
+
+<div class="container" >
+<div class="template">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"  >	
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
   <a class="navbar-brand" href="#">Menú</a>
@@ -48,6 +53,10 @@
     </ul>
   </div>
 </nav>
+</div>
+</div> <!--row-->
+</div> <!-- template -->
+</div> <!--container-->
 <br>
 <!-- logo y titulo-->
 <div class="container">

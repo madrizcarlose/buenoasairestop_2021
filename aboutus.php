@@ -33,13 +33,13 @@
 		<h2><font color=#086A87>Acerca de Nosotros</h3>
 		<br><br>
 		<font color=#0B2161 align="justify"><h4>Somos un página web creada con el objetivo de promover y dar a conocer las diferentes opciones que ofrece la ciudad de Buenos Aires en restaurantes, bares, sitios recreacionales, etc. Adicionalmente servimos como una plataforma de publicación gratis de avisos clasificados asociados a oferta de artículos o servicios.
-		<br><br><br><br>
+		<br><br>
 
 		Nuestro objetivo es conectar personas con negocios y ayudar en la búsqueda de información y apoyar a los emprendimientos en la divulgación de sus servicios.
 
  		<br><br>
 		Sentite libre de contactarnos, hacer preguntas y enviar sugerencias o comentarios relacionados con nuestra página, aseguramos poder atenderte y responderte oportunamente. </p>
-		<br><br>Un cordial saludo.
+		<br>Un cordial saludo.
 
 	</div> 
 	<div class="col-xs-4 col-sm-4 col-md-6 col-lg-3" align="center" id="ocu_menor_igual_800">
@@ -48,6 +48,6 @@
 </div> 
  <br>
 <?php 
-include 'include/footer.inc';
+include 'include/footer_v2.inc';
 ?>
 </body>

@@ -24,7 +24,7 @@
 <div class="container" >
 <!--membrete general-->
 <!--membrete general-->
-<?php include 'include/membrete_01.inc';?>
+<?php include 'include/membrete_02.inc';?>
 </br></br>
 
 <div class="row">
@@ -113,7 +113,7 @@ contactarnos en cualquier momento a través de las diferentes vias de tenemos.
 <br>
  
 <!--pie de pagina-->
-<?php include 'include/footer.inc';?> 
+<?php include 'include/footer_v2.inc';?> 
 
 </div>   
 </body>
