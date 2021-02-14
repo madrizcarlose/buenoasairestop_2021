@@ -101,10 +101,9 @@ Google DFP y Adsense: <a class="external" href="http://www.google.es/policies/te
 
 
 <h3><br><p><strong>Contacto</strong></p></h3>
-<font size=2><p>Si tiene preguntas o cuestiones sobre esta Política, no dude en
-contactarse en cualquier momento a través del formulario de contacto
-disponible en el sitio o por medio del correo electrónico
-vamosba@gmail.com</p>
+<font size=2><p>Si tiene preguntas o cuestiones sobre esta Política, no dudes en
+contactarnos en cualquier momento a través de las diferentes vias de tenemos.
+</p>
 
 <br>Un cordial saludo.
 </blockquote>
