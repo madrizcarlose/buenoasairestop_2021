@@ -82,8 +82,9 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$latf') ) * cos( radia
 
 <html>
   <body>
+  <div align="center">
   <img src="../images/app/utils/logo_BA.png"  alt="" longdesc="" id="img_logo"  height="62" width="130">
-
+    </div>
   <div id="map" class="col-xs-12 col-sm-12 col-md-9 col-lg-9" ></div>
 <div id="list" class="col-xs-12 col-sm-12 col-md-3 col-lg-3" >
 <div style="width: 100%; height: 800px; overflow-y: scroll;">
