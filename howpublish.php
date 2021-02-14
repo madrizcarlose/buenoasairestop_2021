@@ -83,7 +83,7 @@ $('#myModal').on('shown.bs.modal', function () {
   <li>Chat online</li>
 </ol> 
 		
-		<br><br>Un cordial saludo.
+		<br>Un cordial saludo.<br>
 
 	</div> 
 

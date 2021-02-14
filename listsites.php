@@ -141,10 +141,10 @@ $products = json_decode($data,true);
 				onsubmit="POPUPW = window.open('about:blank','POPUPW',
    'width=1200,height=800');">
    <input type="hidden" name="categoria" value="<?php print($categoria); ?>" />
-   <input type="text" name="lat" value="<?php print($lat); ?>" />
-   <input type="text" name="lon" value="<?php print($lon); ?>" />
-   <input type="text" name="latround" value="<?php print( round($lat)); ?>" />
-   <input type="text" name="parametros" value="<?php print($parametros); ?>" />
+   <input type="hidden" name="lat" value="<?php print($lat); ?>" />
+   <input type="hidden" name="lon" value="<?php print($lon); ?>" />
+   <input type="hidden" name="latround" value="<?php print( round($lat)); ?>" />
+   <input type="hidden" name="parametros" value="<?php print($parametros); ?>" />
 
 
   

@@ -277,8 +277,8 @@ include 'include/footer.inc';
 
 <form id="formulario" name="formulario">
   
-   <input type="text" name="latt" id="latt"/>
-   <input type="text" name="lont" id="lont"/>
+   <input type="hidden" name="latt" id="latt"/>
+   <input type="hidden" name="lont" id="lont"/>
 				
           </form>
 
