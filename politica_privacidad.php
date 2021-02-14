@@ -11,7 +11,7 @@
 <div class="template">
 	<div class="row">
 		<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
-			<a href="index.php"><img src="images/app/utils/logo_ba.png"  alt="" longdesc="" id="img_logo"  height="62" width="130">
+			<a href="index.php"><img src="images/app/utils/logo_BA.png"  alt="" longdesc="" id="img_logo"  height="62" width="130">
 			</a>
 		</div>
 		<div class="col-sm-8 col-md-8 col-lg-8" align="left"> 
