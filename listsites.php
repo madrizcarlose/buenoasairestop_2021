@@ -205,7 +205,7 @@ for($i=0; $i<$longitud; $i++) {
       <div class="rate-bg" style="width:<?php echo $rate_bg; ?>%"></div>
       <div class="rate-stars"></div>
   </div>                    
-  <span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>  <span style="color:black; text-algin:center;display-block:inline;"><span class="reviewCount">(<?php echo $row['user_ratings_total']; ?> reviews)</span></span>
+  <span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>  <span class="reviewCount">(<?php echo $row['user_ratings_total']; ?> reviews)</span>
     
    <?php } ?>
                        
