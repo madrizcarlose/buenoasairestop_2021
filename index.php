@@ -40,6 +40,9 @@ else{
 
 <body>
 <!--MENU-->
+<div class="container" >
+<div class="template">
+<div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"  >	
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
@@ -70,6 +73,10 @@ else{
   </div>
 </nav>
 </div>
+</div> <!--row-->
+</div> <!-- template -->
+</div> <!--container-->
+
 <!--FIN MENU-->
 <br>
 <!-- encabezado-->
