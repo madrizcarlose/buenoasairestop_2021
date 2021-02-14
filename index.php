@@ -159,8 +159,6 @@ else{
 </div> <!--container-->
 
 
-<div class='onesignal-customlink-container'></div>
-
 <!-- link OneSignal que es el de push notifications -->
 <div class="container" align="right">
 <div class="template" align="right">
@@ -168,7 +166,7 @@ else{
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 		<div class='onesignal-customlink-container' align="right"></div>
-		sss
+		
 	</div>
 </div></div></div> 
 <!-- fin del link OneSignal que es el de push notifications -->
@@ -215,26 +213,6 @@ else{
 	</div> <!--div row -->
 </div>  <!--div template -->
 </div> <!-- class="container" -->
-
-<!-- BOTON WHATSAPP ME -->
-<script type="text/javascript">
-(function () {
-var options = {
-whatsapp: "+5491127835577", // WhatsApp number
-call_to_action: "Envíanos un mensaje", // Call to action
-position: "left", // Position may be 'right' or 'left'
-};
-var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-})();
-
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-</script>
-<!-- /GetButton.io widget -->
 
 <br><br><br><br><br><br><br><br>
 <!--pie de pagina-->

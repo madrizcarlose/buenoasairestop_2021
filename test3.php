@@ -19,7 +19,7 @@ $result2 = $conn->query($str_sql4);
     {
         print $row['id_place'];
         print ("2<Br>");
-        $url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=".$row['id_place']."&fields=name,rating,formatted_phone_number,geometry,url,website&key=AIzaSyDG-R6WTvqjWqLb-01oG4LV7HV_az9Ajhw" ;
+        $url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=".$row['id_place']."&fields=name,rating,formatted_phone_number,geometry,url,website,user_ratings_total&key=AIzaSyDG-R6WTvqjWqLb-01oG4LV7HV_az9Ajhw" ;
         $json = file_get_contents($url);
         var_dump(json_decode($json));
         //var_dump(json_decode($json, true));
@@ -33,15 +33,17 @@ $result2 = $conn->query($str_sql4);
             $website = $xx['website'];
         }
 
-        $sql = "UPDATE t_negocios SET valoracion=".$xx['rating'].",lat=".$lat.",lon=".$lon.",url='".$xx['url']."',website='".$website."' WHERE id_place='".$row['id_place']."'";
+        //$sql = "UPDATE t_negocios SET valoracion=".$xx['rating'].",lat=".$lat.",lon=".$lon.",url='".$xx['url']."',website='".$website."' WHERE id_place='".$row['id_place']."'";
+        $sql = "UPDATE t_negocios SET user_ratings_total=".$xx['user_ratings_total']." WHERE id_place='".$row['id_place']."'";
         print ("<br>");
         print ($sql);
+        if (1==1) {
         if ($conn->query($sql) === TRUE) {
             echo "Record updated successfully";
           } else {
             echo "Error updating record: " . $conn->error;
           }
-
+        }
           print ("<br><hr><br>");
           
     }

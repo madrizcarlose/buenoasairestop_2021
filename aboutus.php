@@ -3,6 +3,8 @@
 
 <head>
   <?php include 'include/head.inc';?>
+  <?php include 'include/whatsappme.inc';?>
+
 </head>
 
 
