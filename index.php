@@ -83,21 +83,8 @@ else{
 <!--FIN MENU-->
 <br>
 <!-- logo y titulo-->
-<div class="container">
-<div class="template">
-	<div class="row">
-		<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
-			<a href="index.php"><img src="images/app/utils/logo_BA.png"  alt="" longdesc="" id="img_logo"  height="62" width="130">
-			</a>
-		</div>
-		<div class="col-sm-8 col-md-8 col-lg-8" align="left"> 
-			<p class="h2"  align="left">Restaurantes en Buenos Aires</p> 
-	
-		</div>
-	</div>
-</div> <!-- template-->
-</div> <!-- container-->
-<br><br>
+
+<br>
 <!-- encabezado-->
 <div class="container" >
 <div class="template">
