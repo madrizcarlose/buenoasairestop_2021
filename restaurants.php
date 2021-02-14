@@ -40,15 +40,16 @@
         <a class="nav-link" href="index.php">Inicio</a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link" href="howpublish.php" target='popup'  onclick="window.open('http://localhost/buenosairestop/howpublish.php','popup','width=600,height=600,toolbar=no,menubar=no'); return false;">
+        <a class="nav-link" href="howpublish.php" target='popup'  onclick="window.open('howpublish.php','popup','width=600,height=600,toolbar=no,menubar=no'); return false;">
    Como publicarse</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="aboutus.php" target='popup'  onclick="window.open('http://localhost/buenosairestop/aboutus.php','popup','width=600,height=600'); return false;">
+        <a class="nav-link" href="aboutus.php" target='popup'  onclick="window.open('aboutus.php','popup','width=600,height=600'); return false;">
    Acerca de nosotros</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="politica_privacidad.php">Política de privacidad</a>
+	  <li class="nav-item">
+        <a class="nav-link" href="aboutus.php" target='popup'  onclick="window.open('politica_privacidad.php','popup','width=600,height=600'); return false;">
+		Política de privacidad</a>
       </li>
     </ul>
   </div>

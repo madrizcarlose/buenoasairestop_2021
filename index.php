@@ -67,9 +67,11 @@ else{
         <a class="nav-link" href="aboutus.php" target='popup'  onclick="window.open('aboutus.php','popup','width=600,height=600'); return false;">
    Acerca de nosotros</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="politica_privacidad.php">Política de privacidad</a>
+	  <li class="nav-item">
+        <a class="nav-link" href="aboutus.php" target='popup'  onclick="window.open('politica_privacidad.php','popup','width=600,height=600'); return false;">
+		Política de privacidad</a>
       </li>
+      
     </ul>
   </div>
 </nav>
@@ -91,6 +93,7 @@ else{
 			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="left">  -->
 				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
 				<h1 align="left" style="color:#137791">Guía de Buenos Aires</h1>
+				<hr>
 	</div> <!-- float al 70% -->
 		<!--	</div>
 			<div class="col-sm-6 col-md-3 col-lg-2" valign="center" align="right">  -->
