@@ -158,7 +158,7 @@ else{
 </div> <!--container-->
 
 
-
+<div class='onesignal-customlink-container'></div>
 
 <!-- link OneSignal que es el de push notifications -->
 <div class="container" align="right">
@@ -167,7 +167,7 @@ else{
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 		<div class='onesignal-customlink-container' align="right"></div>
-		
+		sss
 	</div>
 </div></div></div> 
 <!-- fin del link OneSignal que es el de push notifications -->
