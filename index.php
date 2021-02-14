@@ -40,7 +40,7 @@ else{
 
 <body>
 <!--MENU-->
-<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"  >	
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
  
