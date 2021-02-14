@@ -82,18 +82,35 @@ else{
 
 <!--FIN MENU-->
 <br>
+<!-- logo y titulo-->
+<div class="container">
+<div class="template">
+	<div class="row">
+		<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
+			<a href="index.php"><img src="images/app/utils/logo_BA.png"  alt="" longdesc="" id="img_logo"  height="62" width="130">
+			</a>
+		</div>
+		<div class="col-sm-8 col-md-8 col-lg-8" align="left"> 
+			<p class="h2"  align="left">Restaurantes en Buenos Aires</p> 
+	
+		</div>
+	</div>
+</div> <!-- template-->
+</div> <!-- container-->
+<br><br>
 <!-- encabezado-->
 <div class="container" >
 <div class="template">
 <div class="row">
 	<div style="float:left;width: 70%;">
-			<!--<div class="col-sm-12 col-md-12 col-lg-12" align="left" valign="center"> -->
-		  		<img src="images/app/utils/logo_BA.png"  alt="" longdesc="" id="img_logo"  height="56" width="117">
-	<!--		</div>
-			<div class="col-sm-8 col-md-6 col-lg-8" valign="center" align="left">  -->
-				<!--<p class="h1"  align="left">Guía de Buenos Aires</p>--> 
-				<h1 align="left" style="color:#137791">Guía de Buenos Aires</h1>
-				<hr>
+	<div class="col-sm-4 col-md-4 col-lg-4" align="left"> 
+			<a href="index.php"><img src="images/app/utils/logo_BA.png"  alt="" longdesc="" id="img_logo"  height="62" width="130">
+			</a>
+		</div>
+		<div class="col-sm-8 col-md-8 col-lg-8" align="left"> 
+			<p class="h2"  align="left">Guía de Buenos Aires</p> 
+	
+		</div>
 	</div> <!-- float al 70% -->
 		<!--	</div>
 			<div class="col-sm-6 col-md-3 col-lg-2" valign="center" align="right">  -->
