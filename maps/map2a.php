@@ -108,7 +108,7 @@ for($i=0; $i<$longitud; $i++) {
   print $row['nomb_negocio'];
   print "</strong></h3></p>&nbsp;&nbsp;";
   print $row['direccion_negocio'];
-  $tira2= "&nbsp;&nbsp;<font size=8><a href=".$row['url'] . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ir</a></font>";
+  $tira2= "&nbsp;&nbsp;<font size=2><a href=".$row['url'] . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ir</a></font>";
    echo $tira2;
      
 
