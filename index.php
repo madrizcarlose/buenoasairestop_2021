@@ -84,7 +84,6 @@ else{
 <br>
 <!-- logo y titulo-->
 
-<br>
 <!-- encabezado-->
 <div class="container" >
 <div class="template">
