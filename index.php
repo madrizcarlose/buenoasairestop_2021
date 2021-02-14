@@ -40,9 +40,6 @@ else{
 
 <body>
 <!--MENU-->
-<div class="container" align="right">
-<div class="template" align="right">
-<div class="row" align="right">
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
@@ -57,7 +54,7 @@ else{
     <ul class="navbar-nav">
 	
 	  <li class="nav-item">
-        <a class="nav-link" href="howpublish.php" target='popup'  onclick="window.open('https://topbuenosaires.online/p/howpublish.php','popup','width=600,height=600,toolbar=no,menubar=no'); return false;">
+        <a class="nav-link" href="howpublish.php" target='popup'  onclick="window.open('howpublish.php','popup','width=600,height=600,toolbar=no,menubar=no'); return false;">
    Como publicarse</a>
       </li>
       <li class="nav-item">
@@ -71,9 +68,6 @@ else{
   </div>
 </nav>
 
-</div> <!--row-->
-</div> <!-- template -->
-</div> <!--container-->
 <!--FIN MENU-->
 <br>
 <!-- encabezado-->
