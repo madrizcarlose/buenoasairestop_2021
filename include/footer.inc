@@ -35,7 +35,7 @@
 			</font>
 		</p>
 			<a href="https://api.whatsapp.com/send?phone=+541127835577&text=Hola quiero contactarlos sobre una publicación en *https://topbuenosaires.online*." target="blank" >
-				<img src="images/app/utils/whatsapp_ico.png"  height="22" width="22"></a><br>
+				<img src="images/app/utils/whatsapp_ico.png"  height="22" width="22">Escribenos por whatsapp</a><br>
 			<br><br><br><br><br><br>
 			<hr>	
 		</div>
