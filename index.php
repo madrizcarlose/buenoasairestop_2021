@@ -40,10 +40,12 @@ else{
 
 <body>
 <!--MENU-->
-
+<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
  
+ <a class="navbar-brand" href="#">Menú</a>
+
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -67,7 +69,7 @@ else{
     </ul>
   </div>
 </nav>
-
+</div>
 <!--FIN MENU-->
 <br>
 <!-- encabezado-->

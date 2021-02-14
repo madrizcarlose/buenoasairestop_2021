@@ -54,7 +54,7 @@ $('#myModal').on('shown.bs.modal', function () {
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9" align="center">
 		<h2><font color=#086A87>Como podés publicarte</h3>
-		<br><br>
+		<br>
 		<font color=#0B2161 align="justify">
         <h4>Si querés publicarte en nuestro directorio solo debés contactarnos por cualquiera de las opciones que indicamos abajo. Solo rquerimos nos hagas llegar información que nos permita saber:
             </p>
@@ -72,13 +72,13 @@ $('#myModal').on('shown.bs.modal', function () {
   <li>Estás ubicado en la ciudad de Buenos Aires.</li>
 </ul> 
 
- 		<br><br>
+ 		<br>
 
-         <h4>Canales de comunicación
+         <h4>Nos podés contactar por...
             </p>
                  <ol>
   <li>Whastapp  <a href="https://api.whatsapp.com/send?phone=+541127835577&text=Hola quiero contactarlos sobre una publicación en *https://topbuenosaires.online*." target="blank" >
-              <img src="images/app/utils/whatsapp_ico.png"  height="22" width="22"><br></li>
+              <img src="images/app/utils/whatsapp_ico.png"  height="22" width="22"></a><br></li>
   <li>Correo electrónico. <a href="mailto:buenosairestopinfo@gmail.com" target="_blank" class="btn btn-primary">Email Us</a></li>
   <li>Chat online</li>
 </ol> 

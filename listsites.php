@@ -80,6 +80,8 @@ $products = json_decode($data,true);
     /* Display rate count Ends*/        
     </style>
    <?php include 'include/head.inc';?>
+   <?php include 'include/onsesignal.inc';?>
+
    <!--
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 -->

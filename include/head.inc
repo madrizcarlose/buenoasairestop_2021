@@ -25,17 +25,7 @@
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- one signal -->
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "7453170c-f96d-4804-9d3b-a6b55ef796ae",
-    });
-  });
-</script>
-  
+ 
  	
 <script type="text/javascript" src="dist/js/jquery-1.10.2.js"></script>
 	
