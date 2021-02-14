@@ -31,7 +31,11 @@
 			<font size="1" face="helvetica" color="black"><small>&copy; 2021 Todos los derechos reservados .</p>
 			<img src="images/app/utils/email-24px.svg"  alt="" longdesc="">buenosairestopinfo@gmail.com
 			&nbsp;&nbsp;&nbsp;
-			<a href="mailto:buenosairestopinfo@gmail.com" target="_blank" class="btn btn-primary">Email Us</a>
+			</small><a href="mailto:buenosairestopinfo@gmail.com" target="_blank" class="btn btn-primary">Email Us</a>
+			</font>
+		</p>
+			<a href="https://api.whatsapp.com/send?phone=+541127835577&text=Hola quiero contactarlos sobre una publicación en *https://topbuenosaires.online*." target="blank" >
+				<img src="images/app/utils/whatsapp_ico.png"  height="22" width="22"></a><br>
 			<br><br><br><br><br><br>
 			<hr>	
 		</div>
