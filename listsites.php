@@ -154,7 +154,7 @@ $products = json_decode($data,true);
    
    
 				<!--	<input type="submit" value="Ver mapa" /> -->
-          <a href=="#" onclick="document.formulario.submit();return false"><img src="images/app/utils/ver_en_mapa.png"  alt="" longdesc="" id="img_logo" >
+      <a href=="#" onclick="document.formulario.submit();return false"><img src="images/app/utils/ver_en_mapa.png"  alt="" longdesc="" id="img_logo" height="46" width="162" >
 			</a>
 	
           </form>
