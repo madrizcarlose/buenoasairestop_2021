@@ -91,7 +91,13 @@ $var_sql="SELECT N.*, Round((( 3959 * acos( cos( radians('$latf') ) * cos( radia
   <?php
  
  $parametros = "categoria=" . $categoria  . "&lat=".$lat . "&lon=".$lon;
-$url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
+
+ 
+
+//$url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
+$url = "http://3.135.249.14/get_sites.php?" . $parametros;
+
+
 //$_POST['categoria'];
 $data = file_get_contents($url);
 $products = json_decode($data,true);

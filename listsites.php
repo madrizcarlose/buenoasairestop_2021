@@ -33,8 +33,11 @@ $parametros = "categoria=" . $_GET['categoria'] . "&lat=".$lat . "&lon=".$lon;
 
 //$url = "http://localhost/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
 //$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?" . $parametros;
-$url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
 
+//$url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
+$url = "http://3.135.249.14/get_sites.php?" . $parametros;
+
+//print $url;
 // $_GET['categoria'];
 $data = file_get_contents($url);
 $products = json_decode($data,true);
@@ -150,7 +153,10 @@ $products = json_decode($data,true);
   
    
    
-					<input type="submit" value="Ver mapa" />
+				<!--	<input type="submit" value="Ver mapa" /> -->
+          <a href=="#" onclick="document.formulario.submit();return false"><img src="images/app/utils/ver_en_mapa.png"  alt="" longdesc="" id="img_logo" >
+			</a>
+	
           </form>
           </div>
           </div> <!--row-->

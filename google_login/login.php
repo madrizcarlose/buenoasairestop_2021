@@ -17,7 +17,7 @@ $client->setClientId('432882886420-uvdm69kl8nb2b19b2es2o7a3ttct5on4.apps.googleu
 // Enter your Client Secrect
 $client->setClientSecret('0KSoCti3JgsmtmNq6VbSyr5g');
 // Enter the Redirect URL
-$client->setRedirectUri('https://serviciomadriz.online/buenosairestop/google_login/login.php');
+$client->setRedirectUri('https://topbuenosaires.online/google_login/login.php');
 
 // Adding those scopes which we want to get (email & profile Information)
 $client->addScope("email");

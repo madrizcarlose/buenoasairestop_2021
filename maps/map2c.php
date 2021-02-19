@@ -6,6 +6,15 @@ $username = "u887045922_vamosba";
 $password = "Carlosyana_99";
 $database = "u887045922_vamosba";
 $server = "185.201.11.107";
+
+
+$username = "test";
+$password = "isO04JyQwsDUm83O";
+$database = "vamosba";
+$server = "localhost";
+
+
+
 //$lat = -34.5737177;
 //$lon = -58.4354472;
 //session_start();

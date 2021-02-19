@@ -11,10 +11,12 @@ $get_user = mysqli_query($db_connection, "SELECT * FROM `users` WHERE `google_id
 
 if(mysqli_num_rows($get_user) > 0){
     $user = mysqli_fetch_assoc($get_user);
+	
 }
 else{
    // header('Location: logout.php');
    // exit;
+   
 }
 ?>
 
@@ -136,6 +138,7 @@ else{
 	$client->setClientId('432882886420-uvdm69kl8nb2b19b2es2o7a3ttct5on4.apps.googleusercontent.com');
 	// Enter your Client Secrect
 	$client->setClientSecret('0KSoCti3JgsmtmNq6VbSyr5g');
+
 	// Enter the Redirect URL
 	//$client->setRedirectUri('https://serviciomadriz.online/buenosairestop/login.php');
 	$client->setRedirectUri('https://topbuenosaires.online/login.php');
