@@ -124,7 +124,7 @@
 		<!-- opcion suramericana -->
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 		   <!-- <a href="listsites.php?categoria=c010"><p class="h1">Sur Americana</p> -->
-		   <a href="#" onclick="showList('c010');"><p class="h1">Sur Americana</p>
+		   <a href="#" onclick="showList('c007');"><p class="h1">Sur Americana</p>
 			<img src="images/app/menu/com_suramerica.jpg" width="120" height="75" alt="Sur Americana" longdesc="Sur Americana" id="img_sura" /></a>
 			<p class="text_menu">Colombiana, Venezolana, Peruana,..</p>
 		   <hr>  

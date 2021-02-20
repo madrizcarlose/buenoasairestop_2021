@@ -1,6 +1,6 @@
 <?php
 
-
+if (1==2) {
 //print ('mmm');
 $username = "u887045922_vamosba";
 $password = "Carlosyana_99";
@@ -13,7 +13,7 @@ $password = "isO04JyQwsDUm83O";
 $database = "vamosba";
 $server = "localhost";
 
-
+}
 
 //$lat = -34.5737177;
 //$lon = -58.4354472;
@@ -47,13 +47,16 @@ $dom = new DOMDocument("1.0");
 $node = $dom->createElement("markers");
 $parnode = $dom->appendChild($node);
 
-// Opens a connection to a MySQL server
 
+include '../include/db_conect.inc';
+// Opens a conn to a MySQL server
+
+if (1==2) {
 $connection=mysqli_connect ($server, $username, $password,$database);
 if (!$connection) { 
  die('Not connected : ' . mysqli_error());
  }
-
+}
 // Set the active MySQL database
 
 // $db_selected = mysqli_select_db($connection);
@@ -65,7 +68,7 @@ if (!$connection) {
 
 //$query = "SELECT * FROM t_negocios Where lat<>0";
 $query = $var_sql3;
-$result = mysqli_query($connection,$query);
+$result = mysqli_query($conn,$query);
 if (!$result) {
  //print ("$var_sql");
  // print ($var_sql);
@@ -91,4 +94,5 @@ while ($row = mysqli_fetch_assoc($result)){
 
 echo $dom->saveXML();
 }
+require "../include/db_conect_close.inc";
 ?>

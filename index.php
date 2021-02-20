@@ -1,5 +1,5 @@
 <?php
-require 'include/db_connection.php';
+require 'google_login/db_connection.php';
 //version enero6
 // if(!isset($_SESSION['login_id'])){
  //   header('Location: login.php');
@@ -208,6 +208,15 @@ else{
 		   <a href="#" onclick="showList('r000');"><p class="h1">Actividades</p>
 			<img src="images/app/menu/opt_funny.jpg" width="120" height="75" alt="Actividades" longdesc="Actividades" id="img_acti" /></a>
 			<p class="text_menu">Parques, karting, tenis, golf,...</p>
+		   <hr>  
+		   <br>
+		</div>
+		<!-- opcion Actividades-->
+    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+		  <!-- <a href="listsites.php?categoria=r000"><p class="h1">Actividades</p> -->
+		   <a href="#" onclick="showList('c010');"><p class="h1">Sitios turísticos</p>
+			<img src="images/app/menu/opt_sites.jpg" width="120" height="75" alt="Actividades" longdesc="Actividades" id="img_acti" /></a>
+			<p class="text_menu">Parques, museos, plazas,...</p>
 		   <hr>  
 		   <br>
 		</div>

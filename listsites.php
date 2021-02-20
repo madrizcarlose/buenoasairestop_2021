@@ -35,7 +35,7 @@ $parametros = "categoria=" . $_GET['categoria'] . "&lat=".$lat . "&lon=".$lon;
 //$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?" . $parametros;
 
 //$url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
-$url = "http://3.135.249.14/get_sites.php?" . $parametros;
+$url = "http://ec2-3-138-102-101.us-east-2.compute.amazonaws.com/get_sites.php?" . $parametros;
 
 //print $url;
 // $_GET['categoria'];
