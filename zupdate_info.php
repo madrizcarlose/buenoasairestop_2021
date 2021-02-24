@@ -43,7 +43,7 @@ $result2 = $conn->query($str_sql4);
         }
 
         //$sql = "UPDATE t_negocios SET valoracion=".$xx['rating'].",lat=".$lat.",lon=".$lon.",url='".$xx['url']."',website='".$website."' WHERE id_place='".$row['id_place']."'";
-        $sql = "UPDATE t_negocios SET  valoracion=".$valoracion.",lat=".$lat.",lon=".$lon.",url='".$xx['url']."',website='".$website."',user_ratings_total=".$count_review." WHERE id_place='".$row['id_place']."'";
+        $sql = "UPDATE t_negocios SET  valoracion=".$valoracion.",lat=".$lat.",lon=".$lon.",url='".$xx['url']."',webpage='".$website."',user_ratings_total=".$count_review." WHERE id_place='".$row['id_place']."'";
         print ("<br>");
         print ($sql);
         if (1==1) {

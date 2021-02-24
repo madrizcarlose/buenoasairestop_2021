@@ -200,8 +200,33 @@ for($i=0; $i<$longitud; $i++) {
     <div class="card-body">
         <h5 class="card-title" >
         <div id="site2<?php echo $row['codi_negocio']; ?>">
-            <h4><font color="#086A87"><?php print $row['nomb_negocio']; ?></h4></font>        
-        </div>
+      
+        <div style="width: 80%; float:left">
+                <font size=3 color="#086A87"><?php print $row['nomb_negocio']; ?></font>  
+            </div>
+            <div style="width: 20%; float:right;" align="right">
+               <a align="right" data-toggle="collapse" href="#texto<?php echo $row['codi_negocio']; ?>" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">...</a>            </div>
+          </div>
+<p><br>
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <?php
     //defining Product id
   if ($row['valoracion']>0){
@@ -215,6 +240,19 @@ for($i=0; $i<$longitud; $i++) {
   </div>                    
   <span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>  <span class="reviewCount">(<?php echo $row['user_ratings_total']; ?> reviews)</span>
     
+  <div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="texto<?php echo $row['codi_negocio']; ?>">
+      <div class="card card-body">
+      <?php echo $row['desc_negocio']; ?> </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
    <?php } ?>
                        
     
