@@ -37,6 +37,7 @@ $parametros = "categoria=" . $_GET['categoria'] . "&lat=".$lat . "&lon=".$lon;
 //$url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
 $url = "http://ec2-3-138-102-101.us-east-2.compute.amazonaws.com/get_sites.php?" . $parametros;
 
+
 //print $url;
 // $_GET['categoria'];
 $data = file_get_contents($url);
@@ -202,7 +203,11 @@ for($i=0; $i<$longitud; $i++) {
         <div id="site2<?php echo $row['codi_negocio']; ?>">
       
         <div style="width: 80%; float:left">
+                
+                <a href="show_fotos.php?id=<?php print $row['codi_negocio'];?>" target="_blank" >
                 <font size=3 color="#086A87"><?php print $row['nomb_negocio']; ?></font>  
+                <br>
+				      </a>
             </div>
             <div style="width: 20%; float:right;" align="right">
                <a align="right" data-toggle="collapse" href="#texto<?php echo $row['codi_negocio']; ?>" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">...</a>            </div>
@@ -210,20 +215,6 @@ for($i=0; $i<$longitud; $i++) {
 <p><br>
 
          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

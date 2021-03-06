@@ -21,5 +21,4 @@ $password = "isO04JyQwsDUm83O";
 $database = "vamosba";
 $server = "localhost";
 
-
 ?>

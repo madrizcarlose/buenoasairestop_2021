@@ -29,7 +29,7 @@
 			| <a href="aboutus.php"><font size="1" face="helvetica" color="blue">Acerca de nosotros</a>   
           	<br>
 			<font size="1" face="helvetica" color="black"><small>&copy; 2021 Todos los derechos reservados .</p>
-			<img src="images/app/utils/email-24px.svg"  alt="" longdesc="">buenosairestopinfo@gmail.com
+			<img src="images/app/utils/email-24px.svg"  height="24" width="24"  alt="" longdesc="">buenosairestopinfo@gmail.com
 			&nbsp;&nbsp;&nbsp;
 			</small><a href="mailto:buenosairestopinfo@gmail.com" target="_blank" class="btn btn-primary">Email Us</a>
 			</font>
