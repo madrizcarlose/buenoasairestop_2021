@@ -23,4 +23,19 @@ name_page = name_page.concat(document.formulario.lont.value);
 		{"Opcion List":categorie});
 	    window.open(name_page,"_self");
 }
+
+function showListZona(zona) {
+var root_page = "listsites.php?zona=";
+var name_page = root_page.concat (zona);
+name_page = name_page.concat ("&lat=");
+name_page = name_page.concat(document.formulario.latt.value);
+name_page = name_page.concat ("&lon=");
+name_page = name_page.concat(document.formulario.lont.value);
+
+//alert(name_page);
+	mixpanel.track(
+		"Open Show List",
+		{"Opcion List":zona});
+	    window.open(name_page,"_self");
+}
 </script>

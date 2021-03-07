@@ -232,10 +232,12 @@ for($i=0; $i<$longitud; $i++) {
   //$image_name2= "img src='" . $image_name2 . "'  width=52,height=28 id='imagen' class='imagen'/> ";
   //$image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' class='imagen'/> ";
 	$foto = "images/sites/" . $row['imagen_negocio'] ;
+    
+    $foto = "faces/face" .rand(100, 109) . ".jpg" ;
 ?>
 <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
 <div class="shadow p-0 mb-5 bg-white rounded">
-    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" height='240'>
+    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" width='1024' high='400'>
     <div class="card-body">
         <h5 class="card-title" >
         <div id="site2<?php echo $row['codi_negocio']; ?>">

@@ -1,6 +1,6 @@
 <?php
 //$categoria = "c003";
-$categoria = $_GET['categoria'];
+
 $lat = $_GET['lat'];
 $lon = $_GET['lon'];
 
@@ -9,10 +9,26 @@ $lonf = (float)$lon;
 //$lat = -34.5737177;
 //$lon = -58.4354472;
 
-$str_sql4="SELECT N.*, Round((( 3959 * acos( cos( radians('$latf') ) * cos( radians( N.lat ) ) * cos( radians( N.lon ) - radians('$lonf') ) + sin( radians('$latf') ) * sin( radians( N.lat ) ) ) )*1.60934),1)  AS distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoria. "' AND Activo=1 Order By Distance ASC;";
+if( isset($_GET['categoria']) )
+{
+    
+    $categoria = $_GET['categoria'];
+    $str_sql4="SELECT N.*, Round((( 3959 * acos( cos( radians('$latf') ) * cos( radians( N.lat ) ) * cos( radians( N.lon ) - radians('$lonf') ) + sin( radians('$latf') ) * sin( radians( N.lat ) ) ) )*1.60934),1)  AS distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE R.id_categoria ='" .$categoria. "' AND Activo=1 Order By Distance ASC;";
+
+} 
+    else  {
+       
+     if ( isset($_GET['zona']) )
+     {
+        $zona = $_GET['zona'];
+        $str_sql4="SELECT N.*, Round((( 3959 * acos( cos( radians('$latf') ) * cos( radians( N.lat ) ) * cos( radians( N.lon ) - radians('$lonf') ) + sin( radians('$latf') ) * sin( radians( N.lat ) ) ) )*1.60934),1)  AS distance FROM t_negocios N JOIN tr_negocios_categorias R ON N.codi_negocio = R.codi_negocio WHERE zona ='" .$zona. "' AND Activo=1 AND R.id_categoria IN ('C003', 'C020', 'C006', 'C008') GROUP BY N.codi_negocio Order By Distance ASC;";
+
+    }
+}
+//print $str_sql4;
 
 include 'include/db_conect.inc';
-print $server;
+//print $server;
 $result2 = $conn->query($str_sql4);
 
 $rawdata = array(); //creamos un array

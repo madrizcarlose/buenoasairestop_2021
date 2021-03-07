@@ -1,0 +1,14 @@
+<img id="myImg" src="">
+<script>
+  async function getFace() {
+    let response = await fetch('https://api.generated.photos/api/v1/faces?per_page=6&gender=female&order_by=random&age=young-adult',{
+      method: 'GET',
+      headers: {
+        'Authorization': 'API-Key sGfFqCs2IPRiQTSPMdRsxw'
+      }
+    });
+    let result = await response.json();
+    document.getElementById("myImg").src = result.faces[0].urls[4]["512"];
+  }
+  getFace();
+</script>
