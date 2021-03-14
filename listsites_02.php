@@ -112,6 +112,9 @@ $products = json_decode($data,true);
         position: absolute;
     }
     /* Rate Star Ends*/
+    .div2 {
+  background-color: lightblue;
+}
     
     /* Display rate count */    
     .reviewCount, .reviewScore {font-size: 12px; color: #666666; margin-left: 5px;}
@@ -203,9 +206,9 @@ $products = json_decode($data,true);
 </div> <!--container-->
 <br>
 
-<div class="custom-container container" >
+<div class="container" >
 <div class="template">
-<div class="container-fluid" style="background-color:#fafafa;">
+<div class="container-fluid" style="background-color:white;">
 	<br><br>
 <div class="row gutter-30" >
 				
@@ -233,25 +236,48 @@ for($i=0; $i<$longitud; $i++) {
   //$image_name3= "img src='" . $image_name2 . "'  width=25,height=25 id='imagen' class='imagen'/> ";
 	$foto = "images/sites/" . $row['imagen_negocio'] ;
     
-    $foto = "faces/face" .rand(100, 109) . ".jpg" ;
+    $foto = "faces/face" .rand(100, 113) . ".jpg" ;
 ?>
-<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3"  >	
-<div class="shadow p-0 mb-5 bg-white rounded">
-    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" width='1024' high='400'>
-    <div class="card-body">
-        <h5 class="card-title" >
+<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2"  >	
+  ddd
+<div class="card">
+      <img class="card-img-top" src="faces/face109.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="faces/face109.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+
+
+ <div class="shadow-lg p-2 mb-5 bg-white rounded">
+<!-- <div class="shadow p-0 mb-5  border-radius:25px"> -->
+    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" width='90' height='280' border-radius=25%>
+   
+    <div class="card-body" style="background-color:black" color="white" align="center" border-radius:25px>
+        <h5 class="card-title" bgcolor=black >
         <div id="site2<?php echo $row['codi_negocio']; ?>">
       
         <div style="width: 80%; float:left">
                 
-                <a href="show_fotos.php?id=<?php print $row['codi_negocio'];?>" target="_blank" >
-                <font size=3 color="#086A87"><?php print $row['nomb_negocio']; ?></font>  
+                <a href="show_fotos.php?id=<?php print $row['codi_negocio'];?>" target="_blank"  border-radius:25px>
+                <font size=3 color="white"><?php print $row['nomb_negocio']; ?></font>  
                 <br>
+                <font size=3 color="white">22</font>  
 				      </a>
             </div>
             <div style="width: 20%; float:right;" align="right">
                <a align="right" data-toggle="collapse" href="#texto<?php echo $row['codi_negocio']; ?>" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">...</a>            </div>
           </div>
+          
 <p><br>
 
          
@@ -260,7 +286,7 @@ for($i=0; $i<$longitud; $i++) {
 
         <?php
     //defining Product id
-  if ($row['valoracion']>0){
+  if ($row['valoracion']<0){
 
       $rate_bg = round(($row['valoracion']/5),2)*100;
       ?>
@@ -329,6 +355,111 @@ for($i=0; $i<$longitud; $i++) {
     </ul>
     
 </div>
+
+ddd
+<div class="shadow-lg p-1 mb-1 bg-white rounded">
+<!-- <div class="shadow p-0 mb-5  border-radius:25px"> -->
+    <img class="card-img-top" src="<?php echo $foto;?>" alt="Card image cap" width='90' height='280' border-radius=25%>
+   
+    <div class="card-body" style="background-color:black" color="white" align="center" border-radius:25px>
+        <h5 class="card-title" bgcolor=black >
+        <div id="site2<?php echo $row['codi_negocio']; ?>">
+      
+        <div style="width: 80%; float:left">
+                
+                <a href="show_fotos.php?id=<?php print $row['codi_negocio'];?>" target="_blank"  border-radius:25px>
+                <font size=3 color="white"><?php print $row['nomb_negocio']; ?></font>  
+                <br>
+                <font size=3 color="white">22</font>  
+				      </a>
+            </div>
+            <div style="width: 20%; float:right;" align="right">
+               <a align="right" data-toggle="collapse" href="#texto<?php echo $row['codi_negocio']; ?>" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">...</a>            </div>
+          </div>
+          
+<p><br>
+
+         
+
+
+
+        <?php
+    //defining Product id
+  if ($row['valoracion']<0){
+
+      $rate_bg = round(($row['valoracion']/5),2)*100;
+      ?>
+      <div style="margin-top: 10px">
+      <div class="result-container">
+      <div class="rate-bg" style="width:<?php echo $rate_bg; ?>%"></div>
+      <div class="rate-stars"></div>
+  </div>                    
+  <span class="reviewScore"><?php echo substr($row['valoracion'],0,3); ?></span>  <span class="reviewCount">(<?php echo $row['user_ratings_total']; ?> reviews)</span>
+    
+  <div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="texto<?php echo $row['codi_negocio']; ?>">
+      <div class="card card-body">
+      <?php echo $row['desc_negocio']; ?> </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+   <?php } ?>
+                       
+    
+    </h5>
+       <p>
+		    <span class="glyphicon glyphicon-earphone"></span>
+		    <span style="color:black; text-algin:center;display-block:inline;">
+            <?php print $row['telef_negocio'];?>        
+            <?php 
+            if ($row['whatsapp'] != NULL) {
+              ?>
+              <a href="https://api.whatsapp.com/send?phone=<?php print $row['whatsapp'];?>&text=Hola, los ubiqué en *https://topbuenosaires.online*." target="blank" >
+              <img src="images/app/utils/whatsapp_ico.png"  height="22" width="22"><br>
+				      </a>
+            <?php  } ?>     
+          </span>
+        <p>
+        <span class="glyphicon glyphicon-map-marker"></span>
+        <?php print $row['direccion_negocio'];?>
+       
+        <a href="#" onclick="showListZona('<?php print $row['zona']; ?>');"><span class="badge  bg-secondary"><?php print $row['zona']; ?></span></a>
+            
+    </div> <!-- class="card-body" -->
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"  style="background-color:#fafafa;">
+           <div style="width: 50%; float:left">
+              <a href="<?php print $row['webpage']; ?>" target="blank" >Web page</a>
+          </div>
+          <div style="width: 50%; float:right;" align="right">
+            <?php 
+              $coord = $row['coord2'];
+             // $tira= "<a href=https://www.google.co.ve/maps/place/" .$coord . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
+              //echo ("<br>");
+              //echo $tira;
+              $tira2= "<a href=".$row['url'] . " onclick=" . "\"window.open(this.href, 'mywin', 'left=200,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" . "\" align='right'>Ver mapa</a>";
+              echo $tira2;
+     
+            ?>
+            <font face="helvetica"><small><?php print $row['distance']; ?>&nbsp;km</font></small>
+          </div>
+       </li>
+    </ul>
+    
+</div>
+
+
+
+
+
+
 </div>	
 
 <?php
