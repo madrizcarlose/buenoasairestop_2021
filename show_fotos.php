@@ -60,19 +60,29 @@ $id_neg = $_GET['id'];
 <?php
 
 $parametros = "id_neg=".$id_neg;
-$url = "http://ec2-3-138-102-101.us-east-2.compute.amazonaws.com/get_info_negocio.php?".$parametros;
+
+
+//$url = "http://ec2-3-138-102-101.us-east-2.compute.amazonaws.com/get_info_negocio.php?".$parametros;
+$server = "https://topbuenosaires.online/";
+$url = $server  ."get_info_negocio.php?".$parametros;
+//print $url;
+//print ("<br>");
 $data = file_get_contents($url);
+
 $info = json_decode($data,true);
+//var_dump($info); 
 $info = $info[0];
 
 
-$url = "http://ec2-3-138-102-101.us-east-2.compute.amazonaws.com/get_fotos.php?".$parametros;
+$url = $server  ."get_fotos.php?".$parametros;
 
 
 //print $url;
 // $_GET['categoria'];
 $data = file_get_contents($url);
 $fotos = json_decode($data,true);
+
+//var_dump($data); 
 $longitud = count($fotos);
 
 ?>

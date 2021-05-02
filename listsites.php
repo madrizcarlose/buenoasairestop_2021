@@ -69,8 +69,8 @@ $parametros = str_replace(' ', '%20', $parametros);
 //$url = "http://localhost/buenosairestop/get_sites.php?categoria=" . $_GET['categoria'];
 //$url = "https://serviciomadriz.online/buenosairestop/get_sites.php?" . $parametros;
 
-//$url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
-$url = "http://ec2-3-138-102-101.us-east-2.compute.amazonaws.com/get_sites.php?" . $parametros;
+$url = "https://topbuenosaires.online/get_sites.php?" . $parametros;
+//$url = "http://3.140.137.249/get_sites.php?" . $parametros;
 
 
 //print $url;
@@ -185,6 +185,7 @@ $products = json_decode($data,true);
    <input type="hidden" name="lon" value="<?php print($lon); ?>" />
    <input type="hidden" name="latt" value="<?php print($lat); ?>" />
    <input type="hidden" name="lont" value="<?php print($lon); ?>" />
+   <input type="hidden" name="categoria" value="<?php print($categoria); ?>" />
    <input type="hidden" name="latround" value="<?php print( round($lat)); ?>" />
    <input type="hidden" name="parametros" value="<?php print($parametros); ?>" />
 

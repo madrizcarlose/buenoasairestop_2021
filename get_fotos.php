@@ -2,10 +2,11 @@
 
 $id_neg = $_GET['id_neg'];
 
-
+//$id_neg = $_POST['id_neg'];
+//$id_neg = 45;
 $str_sql4="SELECT * FROM t_negocios_fotos WHERE codi_negocio =".$id_neg.";";
 
-
+//echo $str_sql4;
 include 'include/db_conect.inc';
 
 $result2 = $conn->query($str_sql4);

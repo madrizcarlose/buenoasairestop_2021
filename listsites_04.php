@@ -133,11 +133,27 @@ $products = json_decode($data,true);
 .div3 { border: 5px solid; height: 60px; width: 260px; margin:10px; background-color:yellow;
 font-size: 20px; text-align:center; padding-top: 20px; word-wrap:break-word; }
 .header2 {margin: 15px 0 -15px 40px;}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
 </style>
   
   </head>
   <body class="example">
-		
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Fixed navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </nav>
+      <div class="header" id="myHeader">
+  <h2>My Header</h2>
+</div>
+
 		<div class="wrapper d-flex align-items-stretch">
 			  <nav id="sidebar">
 				    <div class="p-4 pt-5">
