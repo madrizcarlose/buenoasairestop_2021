@@ -159,7 +159,7 @@
       <div class="row">
       <!-- opcion Restaurantes-->
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <a href="#" onclick="openPage('restaurants.php');"><p class="h2">Restaurantes</p>
+          <a href="#" onclick="openPage('restaurants.php');"><p class="h2">Restaurantes.</p>
         <img src="images/app/menu/opt_comidas.jpeg" width="120" height="75" alt="Restaurantes" longdesc="Restaurantes" id="img_rest" /></a>
          <p class="text_menu">Carnes, pescado, pastas, pizzas, asiática..</p>
          <hr>
