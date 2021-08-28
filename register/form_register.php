@@ -10,7 +10,9 @@
         <label for="idplace"><strong>ID Place:</strong></label>
         <input type="text" name="idplace" id="idplace">
     </p>
-    <hr>
+    <a href=" https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder
+  ">Obtener Place ID</a>
+     <hr>
     <p>
         Descripcion:<textarea rows="4" cols="50" name="descripcion" form="usrform"></textarea>
     </p>
@@ -30,6 +32,7 @@
   <option value="c007">Rest. SurAmericano</option>
   <option value="c020">Bar</option>
   <option value="r000">Actividades</option>
+  <option value="r001">Cabañas</option>
   
   <option value="c010">Sitios turisticos</option>
 </select>

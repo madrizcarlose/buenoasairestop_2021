@@ -192,6 +192,14 @@
          <hr>  
          <br>
       </div>
+       <!-- opcion cabañas-->
+       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+       <!--   <a href="services.php"><p class="h1">Serv. y productos</p> -->
+       <a href="#" onclick="showList('r001');"><p class="h2">Cabañas</p>
+        <img src="images/app/menu/opt_cabanas.jpg" width="120" height="75" alt="Cabañas en Buenos Aires" longdesc="Cabañas en Buenos Aires" id="img_serv" /></a>
+        <p class="text_menu">Cabañas...</p>
+         <hr>    
+      </div>		
       <!-- opcion Servicios-->
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
        <!--   <a href="services.php"><p class="h1">Serv. y productos</p> -->

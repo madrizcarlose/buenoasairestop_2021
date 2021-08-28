@@ -5,6 +5,8 @@ $descripcion = $_POST['descripcion'];
 $idplace = $_POST['idplace'];
 $categoria = $_POST['categoria'];
 //$namefile = $_POST['namefile'];
+print $name;
+print "<br><hr><br>";
 print $descripcion;
 print "<br><hr><br>";
 print $idplace;
